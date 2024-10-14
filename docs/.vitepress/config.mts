@@ -75,8 +75,10 @@ export default defineConfig({
         sidebar: [{
           text: 'راهنمای استفاده',
           items: [
-            { text: 'Introduction', link: '/introduction' },
-            { text: 'Getting Started', link: '/getting-started' },
+            { text: 'ثبت نام', link: '/fa/user/register' },
+            { text: 'احراز هویت', link: '/fa/user/authentication' },
+
+            { text: 'داشبورد', link: '/fa/dashboard' },
           ]
         }],
         footer: {},
