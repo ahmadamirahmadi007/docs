@@ -4,6 +4,11 @@ export default defineConfig({
   // shared properties and other top-level stuff...
    title: "My Awesome Project",
   description: "A VitePress Site",
+  // dir : '/',
+  // outDir : './dist',
+  // cacheDir : './',
+  // assetsDir : '../../assets',
+  // srcDir : './docs',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
