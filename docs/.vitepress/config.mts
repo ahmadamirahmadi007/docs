@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   // shared properties and other top-level stuff...
-   title: "My Awesome Project",
+  title: "My Awesome Project",
   description: "A VitePress Site",
   // dir : '/',
   // outDir : './dist',
@@ -32,15 +32,29 @@ export default defineConfig({
   },
   locales: {
     root: {
-      label: 'Farsi',
-      lang: 'fa'
+      label: 'فارسی',
+      lang: 'fa',
+      link: '/fa',
+      dir: 'rtl',
+      head: [],
+      themeConfig: {
+        siteTitle: 'مستندات ابر ویراک',
+        nav: [],
+        sidebar: [],
+        footer: {},
+      }
     },
-    fr: {
+    en: {
       label: 'English',
-      lang: 'en', // optional, will be added  as `lang` attribute on `html` tag
-    //   link: '/en/' // default /fr/ -- shows on navbar translations menu, can be external
-
-      // other locale specific properties...
+      lang: 'en',
+      dir: 'ltr',
+      link: '/en',
+      head: [], themeConfig: {
+        siteTitle: 'Virak Cloud Documents',
+        nav: [],
+        sidebar: [],
+        footer: {},
+      }
     }
   }
 })
