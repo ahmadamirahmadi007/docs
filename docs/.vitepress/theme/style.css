@@ -140,9 +140,9 @@
 /**
  * Customize
  * -------------------------------------------------------------------------- */
-[dir="rtl"] , [dir="rtl"] body{
+/* [dir="rtl"] , [dir="rtl"] body{
  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-[dir="rtl"]{
-  
+} */
+html {
+  scrollbar-width: thin;
 }

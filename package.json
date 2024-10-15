@@ -1,6 +1,11 @@
 {
-  "dependencies": { "vue-i18n": "^10.0.4" },
+  "dependencies": {
+    "vue-i18n": "^10.0.4"
+  },
   "devDependencies": {
+    "@types/rtlcss": "^3.5.4",
+    "rtlcss": "^4.3.0",
+    "typescript": "^5.4.5",
     "vitepress": "^1.4.0"
   },
   "scripts": {
