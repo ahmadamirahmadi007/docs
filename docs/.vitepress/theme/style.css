@@ -146,3 +146,16 @@
 html {
   scrollbar-width: thin;
 }
+/* Define the custom font for RTL */
+@font-face {
+  font-family: 'IranSans';
+  src: url('/assets/fonts/iran-sans/IRANSansXV.woff2') format('woff2'),
+       url('/assets/fonts/iran-sans/IRANSansXV.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply the custom font for RTL (Farsi) content only */
+:where([dir="rtl"]) {
+  font-family: 'IranSans', sans-serif;
+}

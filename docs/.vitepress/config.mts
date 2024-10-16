@@ -4,8 +4,12 @@ import rtlcss from 'rtlcss'
 export default defineConfig({
   // shared properties and other top-level stuff...
   lang: 'fa-IR',
-  title: "Virak Cloud",
+  // title: "Virak Cloud",
   // description: "",
+  sitemap: {
+    // todo : later check this
+    hostname: 'doc.virakcloud.com'
+  },
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   // dir : '/',
   // outDir : './dist',
@@ -106,12 +110,17 @@ export default defineConfig({
       link: '/fa',
       dir: 'rtl',
       title: 'ابر ویراک',
+      description: 'ابر ویراک: پیشگام در ارائه خدمات رایانش ابری',
       // head: [],
       themeConfig: {
         siteTitle: 'مستندات ابر ویراک',
         // https://vitepress.dev/reference/site-config#lastupdated
         lastUpdated: {
           text: 'آخرین بروزرسانی'
+        },
+        docFooter: {
+          prev: 'صفحه قبلی',
+          next: 'صفحه بعدی'
         },
         nav: [
 
@@ -245,6 +254,7 @@ export default defineConfig({
       dir: 'ltr',
       link: '/en',
       title: 'Virak Cloud',
+      description: 'Virak Cloud: A Pioneer in Cloud Computing Services',
       // head: [],
       themeConfig: {
         siteTitle: 'Virak Cloud Documents',
