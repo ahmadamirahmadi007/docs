@@ -17,7 +17,7 @@ build:
     TAG_REGISTRY_IMAGE: $CI_REGISTRY_IMAGE/$IMAGE_NAME
   before_script:
     - echo $CI_REGISTRY_PASSWORD | docker login -u "$CI_REGISTRY_USER" --password-stdin $CI_REGISTRY
-    - echo $CI_REGISTRY_IMAGE
+    - echo $CI_REGISTRY_IMAGE/$IMAGE_NAME
   script:
     - version=$CI_COMMIT_REF_NAME$(date "+%Y%m%d")
     - docker build
