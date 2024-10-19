@@ -6,6 +6,16 @@
 
 سپس پس از مطالعه قوانین، بر روی آیکون "قوانین را می‌پذیرم" در پایین صفحه کلیک نموده و به مرحله بعد بروید.
 
-![An image](./register.png)
+
+<DarkModeImage
+  dark-src="/assets/images/guides/fa/dark/user/register.png"
+  light-src="/assets/images/guides/fa/light/user/register.png"
+  alt="Registration image"
+/>
 
 در مرحله بعد برای شما یک ایمیل تایید ارسال می شود، وارد ایمیل خود شده و دکمه تایید را بزنید.  پس از فرآیند ثبت نام شما تکمیل می شود.
+
+<script setup>
+import { useData } from 'vitepress'
+const { isDark } = useData()
+</script>

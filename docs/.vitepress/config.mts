@@ -15,7 +15,7 @@ export default defineConfig({
   // outDir : './dist',
   // cacheDir : './',
   // assetsDir : '../../assets',
-  // srcDir : './docs',
+  // srcDir : 'src',
   // vue: {
   // },
   vite: {
