@@ -26,6 +26,7 @@ build:
       --build-arg BUILD_MODE="${CI_COMMIT_REF_NAME}"
       --tag $TAG_REGISTRY_IMAGE:$version
       --target $IMAGE_NAME
+      --build-arg CI_JOB_TOKEN=${CI_JOB_TOKEN}
       .
     - docker push $TAG_REGISTRY_IMAGE:$version
 
