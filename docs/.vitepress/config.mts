@@ -1,5 +1,15 @@
 import { defineConfig } from 'vitepress'
 import rtlcss from 'rtlcss'
+import dotenv from 'dotenv';
+import path from 'path';
+
+// Manually load the correct .env file based on your build mode
+dotenv.config({
+  path: path.resolve(process.cwd(), process.env.BUILD_ENV === 'production'
+    ? '.env.master'
+    : '.env.dev')
+});
+
 
 export default defineConfig({
   // shared properties and other top-level stuff...
@@ -8,7 +18,7 @@ export default defineConfig({
   // description: "",
   sitemap: {
     // todo : later check this
-    hostname: 'doc.virakcloud.com'
+    hostname: process.env.VITE_SITEURL ?? ''
   },
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   // dir : '/',
