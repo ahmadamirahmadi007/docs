@@ -30,7 +30,7 @@ COPY --chown=npm package.json ./
 COPY --chown=npm .env.${BUILD_MODE} ./.env
 
 RUN npm install
-RUN npm run docs:build-master
+RUN npm run docs:build:master
 #npm run docs:preview
 COPY --chown=npm . .
 
