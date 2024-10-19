@@ -7,7 +7,13 @@
     • میزان دیسک کل و میزان دیسک استفاده شده
     • تعداد ابرک های کل که می توانید در هر پنل بسازید و تعداد ابراک های ساخته شده
 
-![An image](./dashboard-resource.png)
+
+<DarkModeImage
+  dark-src="/assets/images/guides/fa/dark/mainPagePanel.png"
+  light-src="/assets/images/guides/fa/light/mainPagePanel.png"
+  alt="Registration image"
+/>
+
 
 ## شارژ حساب
 
@@ -23,6 +29,10 @@
     4- پشتیبانی
     5- گزارش تغییرات
 
-![An image](./dashboard-sidebar.png)
+<DarkModeImage
+  dark-src="/assets/images/guides/fa/dark/dashboard-sidebar.png"
+  light-src="/assets/images/guides/fa/light/dashboard-sidebar.png"
+  alt="Registration image"
+/>
 
 در ادامه هر یک از بخش ها را جداگانه توضیح می دهیم.

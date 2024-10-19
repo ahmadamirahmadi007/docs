@@ -157,5 +157,8 @@ html {
 
 /* Apply the custom font for RTL (Farsi) content only */
 :where([dir="rtl"]) {
-  font-family: 'IranSans', sans-serif;
+  /* font-family: 'IranSans', sans-serif; */
+  :root{
+    --vp-font-family-base : 'IranSans', sans-serif
+  }
 }
