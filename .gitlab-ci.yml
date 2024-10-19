@@ -24,11 +24,11 @@ build:
       --compress
       --file $PWD/.docker/production/Dockerfile
       --build-arg BUILD_MODE="${CI_COMMIT_REF_NAME}"
-      --tag $TAG_REGISTRY_IMAGE:$versiontest
+      --tag $TAG_REGISTRY_IMAGE:1$version
       --target $IMAGE_NAME
       --build-arg CI_JOB_TOKEN=${CI_JOB_TOKEN}
       .
-    - docker push $TAG_REGISTRY_IMAGE:$version
+    - docker push $TAG_REGISTRY_IMAGE:1$version
 
 deployment-dev:
   image: alpine:latest
