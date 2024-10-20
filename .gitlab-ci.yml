@@ -22,6 +22,7 @@ build:
     - version=$CI_COMMIT_REF_NAME$(date "+%Y%m%d")
     - docker build
       --compress
+      --no-cache
       --file $PWD/.docker/production/Dockerfile
       --build-arg BUILD_MODE="${CI_COMMIT_REF_NAME}"
       --tag $TAG_REGISTRY_IMAGE:$version
