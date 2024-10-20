@@ -14,6 +14,7 @@ dotenv.config({
 export default defineConfig({
   // shared properties and other top-level stuff...
   lang: 'fa-IR',
+  cleanUrls: true,
   // title: "Virak Cloud",
   // description: "",
   sitemap: {
@@ -37,11 +38,32 @@ export default defineConfig({
       }
     }
   },
-
-  // markdown: {
-  // https://github.com/markdown-it/markdown-it
-  // },
-  lastUpdated: true,
+  transformHead({ assets }) {
+    // adjust the regex accordingly to match your font
+    const myFontFile = assets.find(file => /IRANSansXV\.\w+\.woff2/)
+    if (myFontFile) {
+      return [
+        [
+          'link',
+          {
+            rel: 'preload',
+            href: myFontFile,
+            as: 'font',
+            type: 'font/woff2',
+            crossorigin: ''
+          }
+        ]
+      ]
+    }
+  },
+  markdown: {
+    // https://github.com/markdown-it/markdown-it
+    image: {
+      // image lazy loading is disabled by default
+      lazyLoading: true
+    }
+  },
+  lastUpdated: false,
   themeConfig: {
     search: {
       provider: 'local',
@@ -124,138 +146,146 @@ export default defineConfig({
       // head: [],
       themeConfig: {
         siteTitle: 'مستندات ابر ویراک',
+        logo: '/images/logo-final.png',
         // https://vitepress.dev/reference/site-config#lastupdated
         lastUpdated: {
           text: 'آخرین بروزرسانی'
         },
+        sidebarMenuLabel: 'منو',
+        returnToTopLabel: 'بازگشت به بالا',
+        outline: {
+          label: 'در این صفحه'
+        },
+        darkModeSwitchLabel: 'ظاهر',
         docFooter: {
           prev: 'صفحه قبلی',
           next: 'صفحه بعدی'
         },
-        nav: [
 
-        ],
-        sidebar: [{
-          text: 'راهنمای استفاده',
-          items: [
-            { text: 'ثبت نام', link: '/fa/user/register' },
-            { text: 'احراز هویت', link: '/fa/user/authentication' },
-            { text: 'داشبورد', link: '/fa/dashboard' },
-            {
-              text: 'میزبانی زیرساخت ابری',
-              items: [
-                {
-                  text: 'لیست ابرک ها',
-                  link: '/fa/instances/list'
-                },
-                {
-                  text: 'ایجاد ابرک ها',
-                  link: '/fa/instances/create'
-                },
-                {
-                  text: 'دیسک ها',
-                  link: '/fa/instances/disk'
-                }
+        sidebar: [
+          {
+            text: 'راهنمای استفاده',
+            items: [
+              { text: 'ثبت نام', link: '/fa/user/register' },
+              { text: 'احراز هویت', link: '/fa/user/authentication' },
+              { text: 'داشبورد', link: '/fa/dashboard' },
+              {
+                text: 'میزبانی زیرساخت ابری',
+                items: [
+                  {
+                    text: 'لیست ابرک ها',
+                    link: '/fa/instances/list'
+                  },
+                  {
+                    text: 'ایجاد ابرک ها',
+                    link: '/fa/instances/create'
+                  },
+                  {
+                    text: 'دیسک ها',
+                    link: '/fa/instances/disk'
+                  }
 
-              ],
-              collapsed: true
-            },
-            {
-              text: 'شبکه های مجازی',
-              items: [
-                {
-                  text: 'لیست شبکه ها',
-                  link: '/fa/networks/list',
-                  items: [{
-                    text: 'جزئیات شبکه',
-                    items: [
-                      {
-                        text: 'پیکربندی شبکه',
-                        link: '/fa/networks/details/config'
-                      },
-                      {
-                        text: 'ابرک های متصل',
-                        link: '/fa/networks/details/connected-instances'
-                      },
-                      {
-                        text: 'فایروال های v4 , v6',
-                        link: '/fa/networks/details/firewall'
-                      },
-                      {
-                        text: 'انتقال پورت',
-                        link: '/fa/networks/details/port-forward'
-                      },
-                      {
-                        text: 'توزیع بار',
-                        link: '/fa/networks/details/load-balance'
-                      }, {
-                        text: 'VPN',
-                        link: '/fa/networks/details/vpn'
-                      },
-                    ],
-                    collapsed: true
-                  }]
-                },
-                {
-                  text: 'نقشه شبکه',
-                  link: '/fa/networks/map'
-                },
-                {
-                  text: 'ایجاد شبکه',
-                  link: '/fa/networks/create'
-                }
+                ],
+                collapsed: true
+              },
+              {
+                text: 'شبکه های مجازی',
+                items: [
+                  {
+                    text: 'لیست شبکه ها',
+                    link: '/fa/networks/list',
+                    items: [{
+                      text: 'جزئیات شبکه',
+                      items: [
+                        {
+                          text: 'پیکربندی شبکه',
+                          link: '/fa/networks/details/config'
+                        },
+                        {
+                          text: 'ابرک های متصل',
+                          link: '/fa/networks/details/connected-instances'
+                        },
+                        {
+                          text: 'فایروال های v4 , v6',
+                          link: '/fa/networks/details/firewall'
+                        },
+                        {
+                          text: 'انتقال پورت',
+                          link: '/fa/networks/details/port-forward'
+                        },
+                        {
+                          text: 'توزیع بار',
+                          link: '/fa/networks/details/load-balance'
+                        }, {
+                          text: 'VPN',
+                          link: '/fa/networks/details/vpn'
+                        },
+                      ],
+                      collapsed: true
+                    }]
+                  },
+                  {
+                    text: 'نقشه شبکه',
+                    link: '/fa/networks/map'
+                  },
+                  {
+                    text: 'ایجاد شبکه',
+                    link: '/fa/networks/create'
+                  }
 
-              ],
-              collapsed: true
-            },
-            {
-              text: 'میزبانی دامنه',
-              link: '/fa/dns'
-            },
-            {
-              text: 'حسابداری و مالی',
-              items: [
-                {
-                  text: 'لیست پرداخت ها',
-                  link: '/fa/accounting/payments'
-                },
-                {
-                  text: 'لیست تراکنش ها',
-                  link: '/fa/accounting/transactions'
-                },
-                {
-                  text: 'هدایا',
-                  link: '/fa/accounting/gifts'
-                },
-              ],
-              collapsed: true,
-            },
-            {
-              text: 'پشتیبانی',
-              items: [
-                {
-                  text: 'لیست درخواست ها',
-                  link: '/fa/tickets/list'
-                },
-                {
-                  text: 'ثبت درخواست جدید',
-                  link: '/fa/tickets/create'
-                },
-                {
-                  text: 'بسته های پشتیبانی',
-                  link: '/fa/tickets/plans'
-                },
-              ],
-              collapsed: true,
-            },
-            {
-              text: 'گزارش تغییرات',
-              link: '/fa/changelogs'
-            }
+                ],
+                collapsed: true
+              },
+              {
+                text: 'میزبانی دامنه',
+                link: '/fa/dns'
+              },
+              {
+                text: 'حسابداری و مالی',
+                items: [
+                  {
+                    text: 'لیست پرداخت ها',
+                    link: '/fa/accounting/payments'
+                  },
+                  {
+                    text: 'لیست تراکنش ها',
+                    link: '/fa/accounting/transactions'
+                  },
+                  {
+                    text: 'هدایا',
+                    link: '/fa/accounting/gifts'
+                  },
+                ],
+                collapsed: true,
+              },
+              {
+                text: 'پشتیبانی',
+                items: [
+                  {
+                    text: 'لیست درخواست ها',
+                    link: '/fa/tickets/list'
+                  },
+                  {
+                    text: 'ثبت درخواست جدید',
+                    link: '/fa/tickets/create'
+                  },
+                  {
+                    text: 'بسته های پشتیبانی',
+                    link: '/fa/tickets/plans'
+                  },
+                ],
+                collapsed: true,
+              },
+              {
+                text: 'گزارش تغییرات',
+                link: '/fa/changelogs'
+              }
 
-          ],
-        }],
-        footer: {},
+            ],
+          }],
+        // footer: {
+        //   copyright: 'Copyright © 2020-present <a href="https://virakcloud.com">Virak Cloud ☁️</a>'
+        // },
       }
     },
     en: {
@@ -270,7 +300,9 @@ export default defineConfig({
         siteTitle: 'Virak Cloud Documents',
         // nav: [],
         sidebar: [],
-        footer: {},
+        // footer: {
+        //   copyright: 'Copyright © 2020-present <a href="https://virakcloud.com/">Virak Cloud ☁️</a>'
+        // }
       }
     }
   }

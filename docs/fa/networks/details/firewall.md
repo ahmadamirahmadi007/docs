@@ -4,27 +4,32 @@
 به طور اتوماتیک  بعد از ایجاد شبکه خصوصی از نوع روتر مجازی مجوز های پیش فرض برای تمامی ترافیک های ورودی به آدرس عمومی و ترافیک های خروجی از آدرس های خصوصی شبکه مورد نظر ایجاد خواهند شد.
 قوانین مورد نظر دارای اولویت می باشند و به دلیل افزایش امنیت برای هر نوع تایپ ترافیک ورودی و خروجی قانون عدم دسترسی برای تمامی ترافیک ایجاد شده است و چنانچه کاربر قصد ایجاد مجوز دسترسی به ترافیکی را داشته باشد میتواند برای آن مجوز دسترسی و قانونی جدید را در این بخش ایجاد کند.
 
-نکته: قانون های دارای همپوشانی ایجاد نخواهند شد و اخطار می دهند.
+::: warning نکته :
+ قانون های دارای همپوشانی ایجاد نخواهند شد و اخطار می دهند.
+:::
 
-افزودن فایروال:
-در این قسمت شما می توانید فایروال مورد نظر خود را ایجاد نمایید
+
+## افزودن فایروال
+در این قسمت شما می توانید فایروال مورد نظر خود را ایجاد نمایید.
 
 
 <DarkModeImage
-  dark-src="/assets/images/guides/fa/dark/networks/add-firewall.png"
-  light-src="/assets/images/guides/fa/light/networks/add-firewall.png"
+  dark-src="/images/guides/fa/dark/networks/add-firewall.png"
+  light-src="/images/guides/fa/light/networks/add-firewall.png"
   alt="Registration image"
 />
 
+<!-- todo: we ca explain more about this fields -->
+
 کاربر با انتخاب مولفه های زیر می تواند قوانین مربوط به مجوزهای ورودی و خروجی ترافیک را ایجاد نماید:
-نوع ترافیک
-نوع پروتکل
-پورت های آزاد
-آدرس مبدا
-آدرس مقصد
+- نوع ترافیک
+- نوع پروتکل
+- پورت های آزاد
+- آدرس مبدا
+- آدرس مقصد
 
 <DarkModeImage
-  dark-src="/assets/images/guides/fa/dark/networks/firewall-entry.png"
-  light-src="/assets/images/guides/fa/light/networks/firewall-entry.png"
+  dark-src="/images/guides/fa/dark/networks/firewall-entry.png"
+  light-src="/images/guides/fa/light/networks/firewall-entry.png"
   alt="Registration image"
 />

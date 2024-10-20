@@ -68,8 +68,18 @@
   --vp-c-danger-2: var(--vp-c-red-2);
   --vp-c-danger-3: var(--vp-c-red-3);
   --vp-c-danger-soft: var(--vp-c-red-soft);
+
+  --vp-font-family-base: sans-serif;
+
+  /* CUSTOM CSS */
+  --vp-nav-logo-height : 60px
 }
 
+@media only screen and (width < 600px) {
+  :root {
+    --vp-nav-logo-height : 45px
+  }
+}
 /**
  * Component: Button
  * -------------------------------------------------------------------------- */
@@ -143,22 +153,27 @@
 /* [dir="rtl"] , [dir="rtl"] body{
  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } */
-html {
+* {
   scrollbar-width: thin;
 }
 /* Define the custom font for RTL */
 @font-face {
   font-family: 'IranSans';
-  src: url('/assets/fonts/iran-sans/IRANSansXV.woff2') format('woff2'),
-       url('/assets/fonts/iran-sans/IRANSansXV.woff') format('woff');
+  src: url('/fonts/iran-sans/IRANSansXV.woff2') format('woff2'),
+       url('/fonts/iran-sans/IRANSansXV.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 /* Apply the custom font for RTL (Farsi) content only */
 :where([dir="rtl"]) {
-  /* font-family: 'IranSans', sans-serif; */
-  :root{
-    --vp-font-family-base : 'IranSans', sans-serif
+  --vp-font-family-base: 'IranSans', sans-serif!important;
+  font-family: var(--vp-font-family-base)!important;
+
+  .back-button {
+    transform: scaleX(-1);
   }
+  .vpi-chevron-right.icon {
+    transform: scaleX(-1);
+}
 }

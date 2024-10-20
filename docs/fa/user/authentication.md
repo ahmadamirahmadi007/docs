@@ -3,8 +3,8 @@
 
 
 <DarkModeImage
-  dark-src="/assets/images/guides/fa/dark/user/auth.png"
-  light-src="/assets/images/guides/fa/light/user/auth.png"
+  dark-src="/images/guides/fa/dark/user/auth.png"
+  light-src="/images/guides/fa/light/user/auth.png"
   alt="Registration image"
 />
 

@@ -12,7 +12,10 @@
     "skipLibCheck": true,
     "jsx": "preserve",
     "baseUrl": ".",
-    "types": ["vite/client" , "node"],
+    "types": [
+      // "vite/client" ,
+       "node"
+      ],
     "paths": {
       "@theme/*": [
         ".vitepress/theme/*"
@@ -23,6 +26,11 @@
     // "env.d.ts",
     "docs/**/*",
     "docs/.vitepress/**/*",
-    "docs/**/*",
-  ]
+    "docs/**/*.ts",
+    "docs/**/*.vue",
+    "docs/**/*.md",
+  ],
+  "vueCompilerOptions": {
+    "vitePressExtensions": [".md"],
+  },
 }
