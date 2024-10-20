@@ -43,6 +43,8 @@ RUN echo ${BUILD_MODE:dev}
 ###################################################
 FROM nginx:alpine AS docs_web_server
 
+EXPOSE 80
+
 ARG TEMP_PKG
 
 WORKDIR /app
