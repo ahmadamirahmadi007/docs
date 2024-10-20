@@ -1,9 +1,9 @@
 # تراکنش ها
 
-در قسمت تراکنش ها شما می توانید تمام فاکتورهای صادر شده برای سرور ابری، ترافیک مصرفی، آیپی، دیسک ها و سایر فاکتورهای صادر شده را با جزئیات آن مشاهده فرمایید
+در قسمت تراکنش ها شما می توانید تمام فاکتورهای صادر شده برای سرور ابری، ترافیک مصرفی، آیپی، دیسک ها و سایر فاکتورهای صادر شده را با جزئیات آن مشاهده فرماید.
 
 <DarkModeImage
-  dark-src="/assets/images/guides/fa/dark/accounting/transaction.png"
-  light-src="/assets/images/guides/fa/light/accounting/transaction.png"
+  dark-src="/images/guides/fa/dark/accounting/transaction.png"
+  light-src="/images/guides/fa/light/accounting/transaction.png"
   alt="Registration image"
 />

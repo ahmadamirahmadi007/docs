@@ -4,27 +4,42 @@
 
 
 <DarkModeImage
-  dark-src="/assets/images/guides/fa/dark/networks/Network-Detail.png"
-  light-src="/assets/images/guides/fa/light/networks/Network-Detail.png"
+  dark-src="/images/guides/fa/dark/networks/Network-Detail.png"
+  light-src="/images/guides/fa/light/networks/Network-Detail.png"
   alt="Registration image"
 />
 
 به طور پیش فرض شبکه های عمومی در این بخش وجود خواهند داشت و کاربر مجوز حذف و ورود به جزئیات را برای این شبکه ها نخواهند داشت.
 
+## عملیات های مربوط به شبکه ها
+
 عملیات مربوط به شبکه ها به ترتیب شامل موارد زیر میباشد.
 
+### اتصال ابرک به شبکه
 با کلیک بر روی اتصال به ابرک لیست تمامی ماشین های ساخته شده توسط کاربر نمایش داده می شود و کاربر میتواند ابرک خود را به شبکه مربوطه متصل نماید.
-نکته: ماشین مجازی مورد نظر میبایست در وضعیت روشن باشد و در صورت تایید، ابرک مورد نظر به ماشین متصل خواهد شد.
-نکته: اگر ابرک مورد نظر در لیست نباشد حتما از قبل به آن شبکه متصل شده است.
 
+::: warning نکته ۱ :
+ماشین مجازی مورد نظر میبایست در وضعیت روشن باشد و در صورت تایید، ابرک مورد نظر به ماشین متصل خواهد شد.
+:::
+
+::: warning نکته ۲ :
+ اگر ابرک مورد نظر در لیست نباشد حتما از قبل به آن شبکه متصل شده است.
+:::
+
+
+### جداسازی ابرک از شبکه
 با کلیک بر روی جداسازی از ابرک کاربر می تواند ابرک خود را از شبکه مورد نظر جدا کند.
 
-حذف شبکه: چنانچه ابرکی به شبکه مورد نظر متصل نباشد کاربر میتواند شبکه خود را حذف نماید.
+###  حذف شبکه
+ چنانچه ابرکی به شبکه مورد نظر متصل نباشد کاربر میتواند شبکه خود را حذف نماید.
 
-جزئیات: با ورود به بخش جزئیات میتوانیم از قابلیت ها و تنظیمات جزئی مربوط به شبکه بهره مند شویم.
+
+###  جزئیات شبکه
+
+با ورود به بخش جزئیات میتوانیم از قابلیت ها و تنظیمات جزئی مربوط به شبکه بهره مند شویم.
 
 <DarkModeImage
-  dark-src="/assets/images/guides/fa/dark/networks/inside-Network.png"
-  light-src="/assets/images/guides/fa/light/networks/inside-Network.png"
+  dark-src="/images/guides/fa/dark/networks/inside-Network.png"
+  light-src="/images/guides/fa/light/networks/inside-Network.png"
   alt="Registration image"
 />

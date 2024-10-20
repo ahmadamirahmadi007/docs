@@ -1,28 +1,34 @@
 # توزیع بار
 
-تقابلیت توزیع بار امکان ارسال ترافیک به سمت سرویس های داخلی شبکه مورد نظر را به صورت توزیع شده و با الگوریتم های rounrobin , leatconn به کار می دهد.
+قابلیت توزیع بار امکان ارسال ترافیک به سمت سرویس های داخلی شبکه مورد نظر را به صورت توزیع شده و با الگوریتم های `Round Robin` , `Least connection` به کار می دهد.
 
 <DarkModeImage
-  dark-src="/assets/images/guides/fa/dark/networks/add-loadbalance.png"
-  light-src="/assets/images/guides/fa/light/networks/add-loadbalance.png"
+  dark-src="/images/guides/fa/dark/networks/add-loadbalance.png"
+  light-src="/images/guides/fa/light/networks/add-loadbalance.png"
   alt="Registration image"
 />
 
+## ساخت توزیع بار
 طرز کار این قابلیت به این صورت است که با افزودن توزیع بار و انتخاب مولفه های زیر یک ورودی جدید برای آن اضافه می شود:
-نام
-الگوریتم
-IP عمومی
-پورت عمومی:  به انتخاب کاربر
-پورت خصوصی:  که بر روی سرویس اصلی تنظیم توسط کاربر تنظیم شده است
+- نام
+- الگوریتم
+- IP عمومی
+- پورت عمومی:  به انتخاب کاربر
+- پورت خصوصی:  که بر روی سرویس اصلی توسط کاربر تنظیم شده است
 
 <DarkModeImage
-  dark-src="/assets/images/guides/fa/dark/networks/loadbalance-entry.png"
-  light-src="/assets/images/guides/fa/light/networks/loadbalance-entry.png"
+  dark-src="/images/guides/fa/dark/networks/loadbalance-entry.png"
+  light-src="/images/guides/fa/light/networks/loadbalance-entry.png"
   alt="Registration image"
 />
 
 بعد از افزودن توزیع بار می توانیم ابرک های مورد نظر خود را بر اساس IP که ارائه دهنده سرویس اصلی ما می باشند را از طریق منو ساخت قانون توزیع کننده بار انتخاب کنیم.
 بعد از اتمام کار ترافیک ارسالی به سمت آی پی عمومی به صورت توزیع شده به ابرک های پشت آن ارسال خواهند شد.
 
+<!-- todo : also we can explain about rules of load-balance  -->
+
+## گزارش زنده
 در منو گزارش زنده به صورت آنلاین میتوانیم صحت عملکرد سرویس توزیع بار و همچنین ابرکهایی که ارائه دهنده سرویس پشت سرویس توزیع بار می باشند را به همراه سنجش مقدار ترافیک ورودی و خروجی و ریسپانس کدها را مشاهده کنیم.
+
+## تاریخچه
 منو تاریخچه نیز صحت عملکرد سرویس ها را به صورت هیستوریکال نگه میدارد.

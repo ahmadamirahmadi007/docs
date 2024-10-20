@@ -9,8 +9,8 @@
 
 
 <DarkModeImage
-  dark-src="/assets/images/guides/fa/dark/mainPagePanel.png"
-  light-src="/assets/images/guides/fa/light/mainPagePanel.png"
+  dark-src="/images/guides/fa/dark/mainPagePanel.png"
+  light-src="/images/guides/fa/light/mainPagePanel.png"
   alt="Registration image"
 />
 
@@ -23,15 +23,15 @@
 
 مطابق تصویر زیر در سمت راست پنل شما می توانید داشبورد اصلی را مشاهده نمایید که شامل موارد زیر می باشد
 
-1- میزبانی زیرساخت ابری
-    2- میزبانی دامنه
-    3- حسابداری و مالی
-    4- پشتیبانی
-    5- گزارش تغییرات
+1. میزبانی زیرساخت ابری
+2. میزبانی دامنه
+3. حسابداری و مالی
+4. پشتیبانی
+5. گزارش تغییرات
 
 <DarkModeImage
-  dark-src="/assets/images/guides/fa/dark/dashboard-sidebar.png"
-  light-src="/assets/images/guides/fa/light/dashboard-sidebar.png"
+  dark-src="/images/guides/fa/dark/dashboard-sidebar.png"
+  light-src="/images/guides/fa/light/dashboard-sidebar.png"
   alt="Registration image"
 />
 
