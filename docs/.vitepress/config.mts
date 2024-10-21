@@ -21,7 +21,7 @@ export default defineConfig({
     // todo : later check this
     hostname: process.env.VITE_SITEURL ?? ''
   },
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  head: [['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]],
   // dir : '/',
   // outDir : './dist',
   // cacheDir : './',
@@ -65,6 +65,7 @@ export default defineConfig({
   },
   lastUpdated: false,
   themeConfig: {
+    logo: '/images/logo-final.png',
     search: {
       provider: 'local',
       options: {
@@ -136,7 +137,7 @@ export default defineConfig({
     ]
   },
   locales: {
-    root: {
+    fa: {
       label: 'فارسی',
       lang: 'fa',
       link: '/fa',
@@ -146,7 +147,6 @@ export default defineConfig({
       // head: [],
       themeConfig: {
         siteTitle: 'مستندات ابر ویراک',
-        logo: '/images/logo-final.png',
         // https://vitepress.dev/reference/site-config#lastupdated
         lastUpdated: {
           text: 'آخرین بروزرسانی'
@@ -166,23 +166,23 @@ export default defineConfig({
           {
             text: 'راهنمای استفاده',
             items: [
-              { text: 'ثبت نام', link: '/fa/user/register' },
-              { text: 'احراز هویت', link: '/fa/user/authentication' },
-              { text: 'داشبورد', link: '/fa/dashboard' },
+              { text: 'ثبت نام', link: '/fa/guides/user/register' },
+              { text: 'احراز هویت', link: '/fa/guides/user/authentication' },
+              { text: 'داشبورد', link: '/fa/guides/dashboard' },
               {
                 text: 'میزبانی زیرساخت ابری',
                 items: [
                   {
                     text: 'لیست ابرک ها',
-                    link: '/fa/instances/list'
+                    link: '/fa/guides/instances/list'
                   },
                   {
                     text: 'ایجاد ابرک ها',
-                    link: '/fa/instances/create'
+                    link: '/fa/guides/instances/create'
                   },
                   {
                     text: 'دیسک ها',
-                    link: '/fa/instances/disk'
+                    link: '/fa/guides/instances/disk'
                   }
 
                 ],
@@ -193,32 +193,32 @@ export default defineConfig({
                 items: [
                   {
                     text: 'لیست شبکه ها',
-                    link: '/fa/networks/list',
+                    link: '/fa/guides/networks/list',
                     items: [{
                       text: 'جزئیات شبکه',
                       items: [
                         {
                           text: 'پیکربندی شبکه',
-                          link: '/fa/networks/details/config'
+                          link: '/fa/guides/networks/details/config'
                         },
                         {
                           text: 'ابرک های متصل',
-                          link: '/fa/networks/details/connected-instances'
+                          link: '/fa/guides/networks/details/connected-instances'
                         },
                         {
                           text: 'فایروال های v4 , v6',
-                          link: '/fa/networks/details/firewall'
+                          link: '/fa/guides/networks/details/firewall'
                         },
                         {
                           text: 'انتقال پورت',
-                          link: '/fa/networks/details/port-forward'
+                          link: '/fa/guides/networks/details/port-forward'
                         },
                         {
                           text: 'توزیع بار',
-                          link: '/fa/networks/details/load-balance'
+                          link: '/fa/guides/networks/details/load-balance'
                         }, {
                           text: 'VPN',
-                          link: '/fa/networks/details/vpn'
+                          link: '/fa/guides/networks/details/vpn'
                         },
                       ],
                       collapsed: true
@@ -226,11 +226,11 @@ export default defineConfig({
                   },
                   {
                     text: 'نقشه شبکه',
-                    link: '/fa/networks/map'
+                    link: '/fa/guides/networks/map'
                   },
                   {
                     text: 'ایجاد شبکه',
-                    link: '/fa/networks/create'
+                    link: '/fa/guides/networks/create'
                   }
 
                 ],
@@ -238,22 +238,22 @@ export default defineConfig({
               },
               {
                 text: 'میزبانی دامنه',
-                link: '/fa/dns'
+                link: '/fa/guides/dns'
               },
               {
                 text: 'حسابداری و مالی',
                 items: [
                   {
                     text: 'لیست پرداخت ها',
-                    link: '/fa/accounting/payments'
+                    link: '/fa/guides/accounting/payments'
                   },
                   {
                     text: 'لیست تراکنش ها',
-                    link: '/fa/accounting/transactions'
+                    link: '/fa/guides/accounting/transactions'
                   },
                   {
                     text: 'هدایا',
-                    link: '/fa/accounting/gifts'
+                    link: '/fa/guides/accounting/gifts'
                   },
                 ],
                 collapsed: true,
@@ -263,22 +263,22 @@ export default defineConfig({
                 items: [
                   {
                     text: 'لیست درخواست ها',
-                    link: '/fa/tickets/list'
+                    link: '/fa/guides/tickets/list'
                   },
                   {
                     text: 'ثبت درخواست جدید',
-                    link: '/fa/tickets/create'
+                    link: '/fa/guides/tickets/create'
                   },
                   {
                     text: 'بسته های پشتیبانی',
-                    link: '/fa/tickets/plans'
+                    link: '/fa/guides/tickets/plans'
                   },
                 ],
                 collapsed: true,
               },
               {
                 text: 'گزارش تغییرات',
-                link: '/fa/changelogs'
+                link: '/fa/guides/changelogs'
               }
 
             ],
@@ -299,7 +299,127 @@ export default defineConfig({
       themeConfig: {
         siteTitle: 'Virak Cloud Documents',
         // nav: [],
-        sidebar: [],
+        sidebar: [
+          {
+            text: 'User Guide',
+            items: [
+              { text: 'Sign Up', link: '/en/guides/user/register' },
+              { text: 'Authentication', link: '/en/guides/user/authentication' },
+              { text: 'Dashboard', link: '/en/guides/dashboard' },
+              {
+                text: 'Cloud Infrastructure Hosting',
+                items: [
+                  {
+                    text: 'List of Cloud Instances',
+                    link: '/en/guides/instances/list'
+                  },
+                  {
+                    text: 'Create Cloud Instances',
+                    link: '/en/guides/instances/create'
+                  },
+                  {
+                    text: 'Disks',
+                    link: '/en/guides/instances/disk'
+                  }
+                ],
+                collapsed: true
+              },
+              {
+                text: 'Virtual Networks',
+                items: [
+                  {
+                    text: 'List of Networks',
+                    link: '/en/guides/networks/list',
+                    items: [{
+                      text: 'Network Details',
+                      items: [
+                        {
+                          text: 'Network Configuration',
+                          link: '/en/guides/networks/details/config'
+                        },
+                        {
+                          text: 'Connected Cloud Instances',
+                          link: '/en/guides/networks/details/connected-instances'
+                        },
+                        {
+                          text: 'Firewalls (v4, v6)',
+                          link: '/en/guides/networks/details/firewall'
+                        },
+                        {
+                          text: 'Port Forwarding',
+                          link: '/en/guides/networks/details/port-forward'
+                        },
+                        {
+                          text: 'Load Balancing',
+                          link: '/en/guides/networks/details/load-balance'
+                        },
+                        {
+                          text: 'VPN',
+                          link: '/en/guides/networks/details/vpn'
+                        }
+                      ],
+                      collapsed: true
+                    }]
+                  },
+                  {
+                    text: 'Network Map',
+                    link: '/en/guides/networks/map'
+                  },
+                  {
+                    text: 'Create Network',
+                    link: '/en/guides/networks/create'
+                  }
+                ],
+                collapsed: true
+              },
+              {
+                text: 'Domain Hosting',
+                link: '/en/guides/dns'
+              },
+              {
+                text: 'Accounting & Finance',
+                items: [
+                  {
+                    text: 'Payment List',
+                    link: '/en/guides/accounting/payments'
+                  },
+                  {
+                    text: 'Transaction List',
+                    link: '/en/guides/accounting/transactions'
+                  },
+                  {
+                    text: 'Gifts',
+                    link: '/en/guides/accounting/gifts'
+                  }
+                ],
+                collapsed: true
+              },
+              {
+                text: 'Support',
+                items: [
+                  {
+                    text: 'List of Requests',
+                    link: '/en/guides/tickets/list'
+                  },
+                  {
+                    text: 'Submit New Request',
+                    link: '/en/guides/tickets/create'
+                  },
+                  {
+                    text: 'Support Packages',
+                    link: '/en/guides/tickets/plans'
+                  }
+                ],
+                collapsed: true
+              },
+              {
+                text: 'Changelog',
+                link: '/en/guides/changelogs'
+              }
+            ]
+          }
+
+        ],
         // footer: {
         //   copyright: 'Copyright © 2020-present <a href="https://virakcloud.com/">Virak Cloud ☁️</a>'
         // }

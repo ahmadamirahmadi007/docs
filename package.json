@@ -3,6 +3,7 @@
     "@types/node": "^22.7.7",
     "@types/rtlcss": "^3.5.4",
     "dotenv": "^16.4.5",
+    "medium-zoom": "^1.1.0",
     "rtlcss": "^4.3.0",
     "sass": "^1.80.3",
     "typescript": "^5.4.5",

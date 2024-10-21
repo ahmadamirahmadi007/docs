@@ -43,7 +43,7 @@
  *   in custom container, badges, etc.
  * -------------------------------------------------------------------------- */
 
- :root {
+:root {
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
   --vp-c-default-3: var(--vp-c-gray-3);
@@ -72,14 +72,15 @@
   --vp-font-family-base: sans-serif;
 
   /* CUSTOM CSS */
-  --vp-nav-logo-height : 60px
+  --vp-nav-logo-height: 60px
 }
 
 @media only screen and (width < 600px) {
   :root {
-    --vp-nav-logo-height : 45px
+    --vp-nav-logo-height: 45px
   }
 }
+
 /**
  * Component: Button
  * -------------------------------------------------------------------------- */
@@ -102,17 +103,13 @@
 
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #039BE5 30%,
-    #41d1ff
-  );
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg,
+      #039BE5 30%,
+      #41d1ff);
 
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #039BE5 50%,
-    #47caff 50%
-  );
+  --vp-home-hero-image-background-image: linear-gradient(-45deg,
+      #039BE5 50%,
+      #47caff 50%);
   --vp-home-hero-image-filter: blur(44px);
 }
 
@@ -156,24 +153,98 @@
 * {
   scrollbar-width: thin;
 }
+
+#app {
+  position: relative;
+  z-index: 0;
+}
+
 /* Define the custom font for RTL */
 @font-face {
   font-family: 'IranSans';
   src: url('/fonts/iran-sans/IRANSansXV.woff2') format('woff2'),
-       url('/fonts/iran-sans/IRANSansXV.woff') format('woff');
+    url('/fonts/iran-sans/IRANSansXV.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 /* Apply the custom font for RTL (Farsi) content only */
 :where([dir="rtl"]) {
-  --vp-font-family-base: 'IranSans', sans-serif!important;
-  font-family: var(--vp-font-family-base)!important;
+  --vp-font-family-base: 'IranSans', sans-serif !important;
+  font-family: var(--vp-font-family-base) !important;
 
   .back-button {
     transform: scaleX(-1);
   }
+
   .vpi-chevron-right.icon {
     transform: scaleX(-1);
+  }
+
+  #VPSidebarNav .VPSidebarItem.collapsed .caret .caret-icon {
+    /* transform: rotate(0deg); */
+    transform: scaleX(-1);
+    /* background-color: red; */
+  }
+
+  .search-input {
+    padding: 6px 12px;
+    font-size: inherit;
+    width: 100%;
+    font-family: 'IranSans', sans-serif !important;
+  }
 }
+
+/*rtl:ignore*/
+:where([dir="ltr"]) {
+
+  .menu {
+    right: 0;
+    left: unset !important;
+  }
+
+  .logo {
+    margin-right: 8px !important;
+    margin-left: unset !important;
+    height: 35px !important;
+  }
+
+  .title .VPNavBarTitle .title span {
+    font-size: 15px;
+  }
+
+  .DocSearch-Button .DocSearch-Button-Placeholder {
+    padding: 0 16px 0 16px;
+  }
+
+  @media only screen and (width > 960px) {
+    .VPSidebar {
+      inset-inline-start: 0 !important;
+    }
+
+    .VPContent.has-sidebar {
+      padding-left: var(--vp-sidebar-width) !important;
+      padding-right: unset !important;
+    }
+
+    .VPNavBar.has-sidebar .content {
+      padding-right: 32px !important;
+      padding-left: var(--vp-sidebar-width) !important;
+    }
+
+    .VPNavBar.has-sidebar .title {
+      left: 0;
+      right: unset;
+    }
+
+    .VPNavBar.has-sidebar .divider {
+      padding-left: var(--vp-sidebar-width) !important;
+      padding-right: unset !important;
+    }
+
+    .VPNavBarSearch {
+      padding-left: 32px !important;
+      padding-right: unset !important;
+    }
+  }
 }
