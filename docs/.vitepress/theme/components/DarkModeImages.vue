@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="isDark">
-      <img data-zoomable :src="darkSrc" :alt="alt" />
+      <img width="100%" height="auto" data-zoomable :src="darkSrc" :alt="alt" />
     </div>
     <div v-else>
       <img data-zoomable :src="lightSrc" :alt="alt" />

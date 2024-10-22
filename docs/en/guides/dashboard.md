@@ -8,13 +8,19 @@ After logging into the [panel](https://panel.virakcloud.com/), you can view the 
 - Total number of clouds that can be created in each panel and the number of clouds created
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/mainPagePanel.png"
-  light-src="/images/guides/en/light/mainPagePanel.png"
+  dark-src="/images/guides/en/dark/dashboard-resources.png"
+  light-src="/images/guides/en/light/dashboard-resources.png"
   alt="Registration image"
 />
 
 ## Account Charge
 On the right side of the panel, you can view your panel's charge balance. If you need to increase your panel's charge balance, you can make a deposit in this section.
+
+<DarkModeImage
+  dark-src="/images/guides/en/dark/increase-inventory.png"
+  light-src="/images/guides/en/light/increase-inventory.png"
+  alt="Registration image"
+/>
 
 ## Sidebar Links
 As shown in the image below, you can see the main dashboard on the right side of the panel, which includes the following:

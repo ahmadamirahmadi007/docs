@@ -9,8 +9,8 @@
 
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/mainPagePanel.png"
-  light-src="/images/guides/fa/light/mainPagePanel.png"
+  dark-src="/images/guides/fa/dark/dashboard-resources.png"
+  light-src="/images/guides/fa/light/dashboard-resources.png"
   alt="Registration image"
 />
 
@@ -18,6 +18,12 @@
 ## شارژ حساب
 
 در سمت راست پنل شما می توانید میزان شارژ پنل خود را مشاهده نمایید، همچنین اگر نیاز به افزایش موجودی شارژ پنل داشته باشید نیز می توانید  در این قسمت واریزی خود را انجام دهید
+
+<DarkModeImage
+  dark-src="/images/guides/fa/dark/increase-inventory.png"
+  light-src="/images/guides/fa/light/increase-inventory.png"
+  alt="Registration image"
+/>
 
 ## لینک های نوار بغل
 
