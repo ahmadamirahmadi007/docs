@@ -8,10 +8,8 @@
     </div>
   </div>
 </template>
-
 <script setup>
-import mediumZoom from 'medium-zoom';
-import {nextTick, onMounted,watch} from "vue"
+import { nextTick, onMounted, watch } from "vue"
 import { useData } from 'vitepress'
 const { isDark } = useData()
 
@@ -21,20 +19,18 @@ defineProps({
   alt: String
 })
 
-const applyZoom = () => {
-  mediumZoom('[data-zoomable]', {
-    background: isDark.value ? 'rgba(0,0,0, 0.8)' : 'rgba(255,255,255 , 0.8)',
-    margin : 20
-  });
-};
-
-onMounted(() => {
-  applyZoom();
-});
-
-watch(isDark, () => {
-  nextTick(()=>{
-    applyZoom();
-  })
-});
 </script>
+<style>
+:root {
+  --image-border-color: #eee;
+}
+
+.dark {
+    --image-border-color: #444!important;
+}
+
+[data-zoomable] {
+  border-radius: 0.5rem;
+  border: 1px solid var(--image-border-color);
+}
+</style>

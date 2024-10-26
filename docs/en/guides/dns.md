@@ -11,8 +11,21 @@ You can manage your domains through the user panel in the [Domain Hosting menu](
 To do this, go to the Domain List submenu and create a new domain.
 Note that the domain should be entered without www. After confirmation in the next step, you must register the Virak Cloud name servers (NS) through your domain registrar's panel or the website where you purchased your domain, or replace the previous name servers.
 
-::: warning Note:
+ <DarkModeImage
+  dark-src="/images/guides/en/dark/dns/add-domain.png"
+  light-src="/images/guides/en/light/dns/add-domain.png"
+  alt="Registration image"
+/>
+
+::: info Note:
 The Virak Cloud name servers will be displayed in the NS settings box.
+
+ <DarkModeImage
+  dark-src="/images/guides/en/dark/dns/add-ns.png"
+  light-src="/images/guides/en/light/dns/add-ns.png"
+  alt="Registration image"
+/>
+
 :::
 
 After confirming and registering the domain, you can create DNS records through the Details menu and view reports related to your domain through the Logs menu.
@@ -20,8 +33,23 @@ After confirming and registering the domain, you can create DNS records through 
 ## Logs
 The reports in this section are based on the number of requests, types of requested records, and the location of requests based on geographical area.
 
+ <DarkModeImage
+  dark-src="/images/guides/en/dark/dns/log.png"
+  light-src="/images/guides/en/light/dns/log.png"
+  alt="Registration image"
+/>
+
 ## Records
-In the Records menu, you can perform the following actions:
+
+ <DarkModeImage
+  dark-src="/images/guides/en/dark/dns/records.png"
+  light-src="/images/guides/en/light/dns/records.png"
+  alt="Registration image"
+/>
+
+In the Records menu, you can perform the following
+actions:
+
 ### Add New Record
 You can create the following records:
 
