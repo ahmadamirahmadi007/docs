@@ -20,7 +20,7 @@ window.remark_config = {
   // {
   // id: uniquePageId.value,
   // src: "http://85.9.104.13:8080/web/",
-  host: "http://85.9.104.13:8080",
+  host: "https://dani.jicotech.ir",
   // secret: 'fooRai5w',
   site_id: 'remark',
   // }
