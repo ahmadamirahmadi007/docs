@@ -12,17 +12,42 @@
 برای این منظور میتوانند از طریق زیر منوی لیست دامنه ها اقدام به ایجاد دامنه جدید کنند.
 دقت شود که دامنه را بدون www وارد کرده  و بعد از تایید در مرحله بعد میبایست از طریق پنل رجیستر دامنه یا سایتی که دامنه‌ی خود را تهیه کرده‌اید NSهای ویراک کلاد را ثبت و یا جایگزین NS های قبلی نمایید.
 
-::: warning نکته :
+<DarkModeImage
+  dark-src="/images/guides/fa/dark/dns/add-domain.png"
+  light-src="/images/guides/fa/light/dns/add-domain.png"
+  alt="Registration image"
+/>
+
+
+::: info نکته :
  NSهای ویراک کلود در کادر تنظیمات NS به شما نمایش داده می شود.
+ <DarkModeImage
+  dark-src="/images/guides/fa/dark/dns/add-ns.png"
+  light-src="/images/guides/fa/light/dns/add-ns.png"
+  alt="Registration image"
+/>
 :::
 
 
-بعد از تایید و ثبت دامنه از طریق منوی جزیات میتوانید اقدام به ایجاد رکوردهای DNS کرده و از طریق منوی لاگ ها گزارشات مربوط به دامنه خود را مشاهده نمایید.
+بعد از تایید و ثبت دامنه از طریق منوی جزئیات میتوانید اقدام به ایجاد رکوردهای DNS کرده و از طریق منوی لاگ ها گزارشات مربوط به دامنه خود را مشاهده نمایید.
 
 ## لاگ ها
 گزارشات در این بخش بر اساس تعداد درخواست ها , انواع رکورد ها ی مورد درخواست و همچنین لوکیشن درخواست ها بر اساس منطقه جغرافیایی قابل مشاهده می باشد.
 
+ <DarkModeImage
+  dark-src="/images/guides/fa/dark/dns/log.png"
+  light-src="/images/guides/fa/light/dns/log.png"
+  alt="Registration image"
+/>
+
 ## رکوردها
+
+ <DarkModeImage
+  dark-src="/images/guides/fa/dark/dns/records.png"
+  light-src="/images/guides/fa/light/dns/records.png"
+  alt="Registration image"
+/>
+
 از طریق منوی رکوردها اقدامات زیر قابل انجام می باشد.
 ### افزودن رکورد جدید
  کاربران میتوانند رکوردهای زیر ایجاد نمایند:

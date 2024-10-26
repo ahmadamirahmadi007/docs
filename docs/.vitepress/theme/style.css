@@ -159,6 +159,14 @@
   z-index: 0;
 }
 
+.medium-zoom-overlay {
+  z-index: 1;
+}
+
+.medium-zoom-image {
+  z-index: 2;
+}
+
 /* Define the custom font for RTL */
 @font-face {
   font-family: 'IranSans';
@@ -215,6 +223,25 @@
 
   .DocSearch-Button .DocSearch-Button-Placeholder {
     padding: 0 16px 0 16px;
+  }
+
+  .edit-link-icon {
+    margin-right: 8px;
+    margin-left: unset !important;
+  }
+
+  .vp-doc .header-anchor {
+    right: unset;
+    left: 0;
+    margin-right: unset;
+    margin-left: -0.87em;
+  }
+
+  .VPSidebarItem .items {
+    border-left: 1px solid var(--vp-c-divider);
+    border-right: unset !important;
+    padding-left: 16px;
+    padding-right: unset;
   }
 
   @media only screen and (width > 960px) {

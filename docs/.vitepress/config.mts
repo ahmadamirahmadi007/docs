@@ -11,6 +11,8 @@ dotenv.config({
 });
 
 
+const github_link_url = 'https://github.com/virakCloud/docs/edit/main/docs/:path'
+
 export default defineConfig({
   // shared properties and other top-level stuff...
   lang: 'fa-IR',
@@ -147,9 +149,14 @@ export default defineConfig({
       // head: [],
       themeConfig: {
         siteTitle: 'مستندات ابر ویراک',
+        logoLink: '/fa/guides/index',
         // https://vitepress.dev/reference/site-config#lastupdated
         lastUpdated: {
           text: 'آخرین بروزرسانی'
+        },
+        editLink: {
+          pattern: github_link_url,
+          text: 'این صفحه را در گیت هاب ویرایش کنید'
         },
         sidebarMenuLabel: 'منو',
         returnToTopLabel: 'بازگشت به بالا',
@@ -175,6 +182,10 @@ export default defineConfig({
                   {
                     text: 'لیست ابرک ها',
                     link: '/fa/guides/instances/list'
+                  },
+                  {
+                    text: 'جزئیات ابرک ها',
+                    link: '/fa/guides/instances/details'
                   },
                   {
                     text: 'ایجاد ابرک ها',
@@ -298,6 +309,11 @@ export default defineConfig({
       // head: [],
       themeConfig: {
         siteTitle: 'Virak Cloud Documents',
+        logoLink: '/en/guides/index',
+        editLink: {
+          pattern: github_link_url,
+          text: 'Edit this page on GitHub'
+        },
         // nav: [],
         sidebar: [
           {
@@ -312,6 +328,10 @@ export default defineConfig({
                   {
                     text: 'List of Cloud Instances',
                     link: '/en/guides/instances/list'
+                  },
+                  {
+                    text: 'Details of Cloud Instances',
+                    link: '/en/guides/instances/details'
                   },
                   {
                     text: 'Create Cloud Instances',

@@ -1,10 +1,29 @@
 <!-- .vitepress/theme/Layout.vue -->
 <script setup lang="ts">
-import { useData } from 'vitepress'
+import { useData , useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import { nextTick, provide } from 'vue'
-
+import { nextTick, provide  , onMounted , watch } from 'vue'
+import mediumZoom from 'medium-zoom';
 const { isDark } = useData()
+
+
+const router = useRoute()
+const applyZoom = () => {
+  mediumZoom('[data-zoomable]', {
+    background:  'rgba(0,0,0, 0.8)',
+    margin: 20
+  });
+};
+
+onMounted(() => {
+  applyZoom();
+});
+
+watch([()=> isDark.value , ()=>router.path], () => {
+  nextTick(() => {
+    applyZoom();
+  })
+});
 
 const enableTransitions = () =>
     'startViewTransition' in document &&
@@ -38,10 +57,13 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
         }
     )
 })
+
 </script>
+
 <template>
     <DefaultTheme.Layout />
 </template>
+
 <style>
 ::view-transition-old(root),
 ::view-transition-new(root) {
