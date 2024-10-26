@@ -4,6 +4,8 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import DarkModeImage from './components/DarkModeImages.vue'
+import Remark42Comments from './components/Remark42Comments.vue'
+
 import Layout from './Layout.vue'
 
 export default {
@@ -16,5 +18,7 @@ export default {
   // },
   enhanceApp({ app, router, siteData }) {
     app.component('DarkModeImage', DarkModeImage)
+    app.component('CommentBox', Remark42Comments)
+
   }
 } satisfies Theme
