@@ -17,4 +17,6 @@ This guide will help you get started with the Virak Cloud Server product.
 
 To use the Virak Cloud Server, you first need to register on the website. The following guide will assist you in this process.
 
-<CommentBox/>
+<ClientOnly>
+ <CommentBox/>
+</ClientOnly>

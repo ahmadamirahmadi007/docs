@@ -14,5 +14,8 @@
     "docs:build": "BUILD_ENV=development vitepress build docs",
     "docs:build:master": "BUILD_ENV=production vitepress build docs --mode master",
     "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "vue": "^3.5.12"
   }
 }
