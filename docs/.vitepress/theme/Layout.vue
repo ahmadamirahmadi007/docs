@@ -4,10 +4,13 @@ import { useData, useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { nextTick, provide, onMounted, watch } from 'vue'
 import mediumZoom from 'medium-zoom';
+
+
 const { isDark } = useData()
 
 
 const router = useRoute()
+
 const applyZoom = () => {
   mediumZoom('[data-zoomable]', {
     background: 'rgba(0,0,0, 0.8)',
@@ -15,36 +18,39 @@ const applyZoom = () => {
   });
 };
 
+// const remark_config = computed(()=>{
+//     return {
+//      host: "https://comment.docs.dev.virakcloud.net",
+//       theme : isDark.value,
+//         // secret: 'fooRai5w',
+//         site_id: 'remark'
+//     }
+// })
 
 onMounted(() => {
   // console.log('create script run');
-
   // init comment
   // (function () {
-  window.remark_config = {
-    // loaders: [
-    // {
-    // id: uniquePageId.value,
-    // src: "http://85.9.104.13:8080/web/",
-    host: "https://dani.jicotech.ir",
-    // secret: 'fooRai5w',
-    site_id: 'remark',
-    // }
-    // ]
-  };
 
-  var host = 'http://85.9.104.13:8080' // Your remark42 host
-  var components = ['embed']; // Your choice of remark42 components
+  // window.remark_config = {
+  //   host: "https://comment.docs.dev.virakcloud.net",
+  //   theme: isDark.value ? 'dark' : 'light',
+  //   // secret: 'fooRai5w',
+  //   site_id: 'remark'
+  // };
 
-  (function (c) {
-    for (let i = 0; i < c.length; i++) {
-      const d = document
-      const s = d.createElement('script')
-      s.src = remark_config.host + '/web/' + c[i] + '.js'
-      s.defer = true
-        ; (d.head || d.body).appendChild(s)
-    }
-  })(components)
+  // // var host = 'http://85.9.104.13:8080' // Your remark42 host
+  // // var components = ['embed']; // Your choice of remark42 components
+
+  // (function (c) {
+  //   for (let i = 0; i < c.length; i++) {
+  //     const d = document
+  //     const s = d.createElement('script')
+  //     s.src = remark_config.host + '/web/' + c[i] + '.js'
+  //     s.defer = true
+  //       ; (d.head || d.body).appendChild(s)
+  //   }
+  // })([['embed']])
   // })
 
   applyZoom();
@@ -92,8 +98,20 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 </script>
 <template>
   <DefaultTheme.Layout />
+  <Teleport to="#VPContent .content-container">
+    <CommentBox id="remark42"></CommentBox>
+  </Teleport>
 </template>
 <style>
+#remark42 {
+  margin-top: 30px;
+}
+
+.root__copyright {
+  display: none;
+}
+
+/* ============= Transition dark/light Mode ============= */
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;
