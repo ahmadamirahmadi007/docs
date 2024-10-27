@@ -8,8 +8,8 @@
     </div>
   </div>
 </template>
+
 <script setup>
-import { nextTick, onMounted, watch } from "vue"
 import { useData } from 'vitepress'
 const { isDark } = useData()
 
@@ -18,8 +18,8 @@ defineProps({
   lightSrc: String,
   alt: String
 })
-
 </script>
+
 <style>
 :root {
   --image-border-color: #eee;

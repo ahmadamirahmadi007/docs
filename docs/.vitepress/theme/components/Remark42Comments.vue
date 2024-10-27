@@ -13,7 +13,7 @@ const route = useRoute()
 
 
 function initRemark42() {
-  if (window.REMARK42) {
+  if (window.REMARK42 && !import.meta.env.SSR) {
     if (remark42Instance.value) {
       remark42Instance.value.destroy()
     }

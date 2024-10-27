@@ -15,23 +15,24 @@ const applyZoom = () => {
   });
 };
 
-window.remark_config = {
-  // loaders: [
-  // {
-  // id: uniquePageId.value,
-  // src: "http://85.9.104.13:8080/web/",
-  host: "https://dani.jicotech.ir",
-  // secret: 'fooRai5w',
-  site_id: 'remark',
-  // }
-  // ]
-};
 
 onMounted(() => {
   // console.log('create script run');
 
   // init comment
   // (function () {
+  window.remark_config = {
+    // loaders: [
+    // {
+    // id: uniquePageId.value,
+    // src: "http://85.9.104.13:8080/web/",
+    host: "https://dani.jicotech.ir",
+    // secret: 'fooRai5w',
+    site_id: 'remark',
+    // }
+    // ]
+  };
+
   var host = 'http://85.9.104.13:8080' // Your remark42 host
   var components = ['embed']; // Your choice of remark42 components
 
