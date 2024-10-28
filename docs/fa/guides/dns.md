@@ -5,7 +5,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/dns/create-domain.png"
   light-src="/images/guides/fa/light/dns/create-domain.png"
-  alt="Registration image"
+  alt="Domain Hosting"
 />
 
 
@@ -15,7 +15,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/dns/add-domain.png"
   light-src="/images/guides/fa/light/dns/add-domain.png"
-  alt="Registration image"
+  alt="Enter Domain"
 />
 
 
@@ -24,7 +24,7 @@
  <DarkModeImage
   dark-src="/images/guides/fa/dark/dns/add-ns.png"
   light-src="/images/guides/fa/light/dns/add-ns.png"
-  alt="Registration image"
+  alt="Add NS"
 />
 :::
 
@@ -37,7 +37,7 @@
  <DarkModeImage
   dark-src="/images/guides/fa/dark/dns/log.png"
   light-src="/images/guides/fa/light/dns/log.png"
-  alt="Registration image"
+  alt="DNS Logs"
 />
 
 ## رکوردها
@@ -45,7 +45,7 @@
  <DarkModeImage
   dark-src="/images/guides/fa/dark/dns/records.png"
   light-src="/images/guides/fa/light/dns/records.png"
-  alt="Registration image"
+  alt="DNS Records"
 />
 
 از طریق منوی رکوردها اقدامات زیر قابل انجام می باشد.

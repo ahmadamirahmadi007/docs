@@ -16,7 +16,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/networks/add-firewall.png"
   light-src="/images/guides/fa/light/networks/add-firewall.png"
-  alt="Registration image"
+  alt="Create firewall"
 />
 
 <!-- todo: we ca explain more about this fields -->
@@ -31,5 +31,5 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/networks/firewall-entry.png"
   light-src="/images/guides/fa/light/networks/firewall-entry.png"
-  alt="Registration image"
+  alt="Firewall entry"
 />

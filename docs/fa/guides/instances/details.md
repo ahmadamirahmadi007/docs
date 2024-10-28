@@ -6,7 +6,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/instances/instance-details.png"
   light-src="/images/guides/fa/light/instances/instance-details.png"
-  alt="Registration image"
+  alt="Instance Details"
 />
 
 ## ردیف اول شامل موارد زیر می‌باشد:

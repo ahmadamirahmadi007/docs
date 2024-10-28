@@ -6,5 +6,5 @@ In the [Gifts section](https://panel.virakcloud.com/accounting/gifts/list), you 
 <DarkModeImage
   dark-src="/images/guides/en/dark/accounting/gifts.png"
   light-src="/images/guides/en/light/accounting/gifts.png"
-  alt="Registration image"
+  alt="Gifts List"
 />

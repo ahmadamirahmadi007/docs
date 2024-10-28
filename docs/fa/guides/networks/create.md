@@ -8,7 +8,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/networks/create-network-switch.png"
   light-src="/images/guides/fa/light/networks/create-network-switch.png"
-  alt="Registration image"
+  alt="Create Virtual Swtich"
 />
 
 
@@ -19,7 +19,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/networks/create-network-router.png"
   light-src="/images/guides/fa/light/networks/create-network-router.png"
-  alt="Registration image"
+  alt="Create Virtual Router"
 />
 
 

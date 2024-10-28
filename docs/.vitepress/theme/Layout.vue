@@ -18,41 +18,8 @@ const applyZoom = () => {
   });
 };
 
-// const remark_config = computed(()=>{
-//     return {
-//      host: "https://comment.docs.dev.virakcloud.net",
-//       theme : isDark.value,
-//         // secret: 'fooRai5w',
-//         site_id: 'remark'
-//     }
-// })
 
 onMounted(() => {
-  // console.log('create script run');
-  // init comment
-  // (function () {
-
-  // window.remark_config = {
-  //   host: "https://comment.docs.dev.virakcloud.net",
-  //   theme: isDark.value ? 'dark' : 'light',
-  //   // secret: 'fooRai5w',
-  //   site_id: 'remark'
-  // };
-
-  // // var host = 'http://85.9.104.13:8080' // Your remark42 host
-  // // var components = ['embed']; // Your choice of remark42 components
-
-  // (function (c) {
-  //   for (let i = 0; i < c.length; i++) {
-  //     const d = document
-  //     const s = d.createElement('script')
-  //     s.src = remark_config.host + '/web/' + c[i] + '.js'
-  //     s.defer = true
-  //       ; (d.head || d.body).appendChild(s)
-  //   }
-  // })([['embed']])
-  // })
-
   applyZoom();
 });
 
@@ -98,8 +65,8 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 </script>
 <template>
   <DefaultTheme.Layout />
-  <Teleport to="#VPContent .content-container">
-    <CommentBox id="remark42"></CommentBox>
+  <Teleport to="#VPContent .content-container" defer>
+    <CommentBox />
   </Teleport>
 </template>
 <style>

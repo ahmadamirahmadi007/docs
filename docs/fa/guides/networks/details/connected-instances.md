@@ -5,5 +5,5 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/networks/vm-connected.png"
   light-src="/images/guides/fa/light/networks/vm-connected.png"
-  alt="Registration image"
+  alt="Connected Instance"
 />

@@ -6,7 +6,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/networks/Network-Detail.png"
   light-src="/images/guides/fa/light/networks/Network-Detail.png"
-  alt="Registration image"
+  alt="Network Details"
 />
 
 به طور پیش فرض شبکه های عمومی در این بخش وجود خواهند داشت و کاربر مجوز حذف و ورود به جزئیات را برای این شبکه ها نخواهند داشت.
@@ -41,5 +41,5 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/networks/inside-Network.png"
   light-src="/images/guides/fa/light/networks/inside-Network.png"
-  alt="Registration image"
+  alt="Network Details"
 />

@@ -15,7 +15,7 @@ As soon as a private network of the virtual router type is created and the first
 <DarkModeImage
   dark-src="/images/guides/en/dark/networks/public-ip.png"
   light-src="/images/guides/en/light/networks/public-ip.png"
-  alt="Registration image"
+  alt="Public IPs"
 />
 
 ::: warning Note:

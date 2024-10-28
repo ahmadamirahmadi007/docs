@@ -5,5 +5,5 @@ In this section, we can see the clouds connected to the network. This section al
 <DarkModeImage
   dark-src="/images/guides/en/dark/networks/vm-connected.png"
   light-src="/images/guides/en/light/networks/vm-connected.png"
-  alt="Registration image"
+  alt="Connected Instance"
 />

@@ -75,6 +75,11 @@ watch(isDark, (newVal) => {
   <div id="remark42" ref="remark42"></div>
 </template>
 
+<style>
+.root__copyright{
+  display: none;
+}
+</style>
 
 <!-- <template>
   <div id="remark42" ref="remark42"></div>

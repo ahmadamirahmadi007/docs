@@ -5,5 +5,5 @@ In the [Transactions section](https://panel.virakcloud.com/accounting/transactio
 <DarkModeImage
   dark-src="/images/guides/en/dark/accounting/transaction.png"
   light-src="/images/guides/en/light/accounting/transaction.png"
-  alt="Transactions image"
+  alt="Transactions"
 />

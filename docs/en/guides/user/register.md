@@ -9,7 +9,7 @@ After reading the rules, click the "I accept the rules" icon at the bottom of th
 <DarkModeImage
   dark-src="/images/guides/en/dark/user/register.png"
   light-src="/images/guides/en/light/user/register.png"
-  alt="Registration image"
+  alt="Registration"
 />
 
 In the next step, a confirmation email will be sent to you. Open the email and click the confirmation button. Your registration process will then be completed.

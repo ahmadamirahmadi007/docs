@@ -5,7 +5,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/instances/disk/disk-list.png"
   light-src="/images/guides/fa/light/instances/disk/disk-list.png"
-  alt="Registration image"
+  alt="Disk list"
 />
 
 ## ایجاد دیسک
@@ -15,7 +15,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/instances/disk/disk-create.png"
   light-src="/images/guides/fa/light/instances/disk/disk-create.png"
-  alt="Registration image"
+  alt="Create Disk"
 />
 
 > **نکته:** ایجاد دیسک منجر به اتصال آن به ابرک نخواهد شد و کار میبایست از طریق گزینه اتصال به ابرک جهت اتصال استفاده کند.

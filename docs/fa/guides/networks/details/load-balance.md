@@ -5,7 +5,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/networks/add-loadbalance.png"
   light-src="/images/guides/fa/light/networks/add-loadbalance.png"
-  alt="Registration image"
+  alt="Create LoadBalance"
 />
 
 ## ساخت توزیع بار
@@ -19,7 +19,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/networks/loadbalance-entry.png"
   light-src="/images/guides/fa/light/networks/loadbalance-entry.png"
-  alt="Registration image"
+  alt="LoadBalance Entry"
 />
 
 بعد از افزودن توزیع بار می توانیم ابرک های مورد نظر خود را بر اساس IP که ارائه دهنده سرویس اصلی ما می باشند را از طریق منو ساخت قانون توزیع کننده بار انتخاب کنیم.

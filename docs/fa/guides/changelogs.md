@@ -5,5 +5,5 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/change-log.png"
   light-src="/images/guides/fa/light/change-log.png"
-  alt="Registration image"
+  alt="Changelogs"
 />

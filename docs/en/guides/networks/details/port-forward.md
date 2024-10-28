@@ -5,7 +5,7 @@ In this section, we can forward incoming traffic to a public IP address and a sp
 <DarkModeImage
   dark-src="/images/guides/en/dark/networks/add-portforward.png"
   light-src="/images/guides/en/light/networks/add-portforward.png"
-  alt="Registration image"
+  alt="Create portforward"
 />
 
 <!-- todo: we ca explain more about this fields -->
@@ -21,5 +21,5 @@ The components are as follows:
 <DarkModeImage
   dark-src="/images/guides/en/dark/networks/portforward-entry.png"
   light-src="/images/guides/en/light/networks/portforward-entry.png"
-  alt="Registration image"
+  alt="PortForward entry"
 />

@@ -5,7 +5,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/user/auth.png"
   light-src="/images/guides/fa/light/user/auth.png"
-  alt="Registration image"
+  alt="Authentication"
 />
 
 کد ملی خود را وارد نموده و دکمه تایید را بزنید . در مرحله بعد شماره همراه خود را وارد نموده و کد 6 رقمی ارسالی را ثبت نمایید تا احراز هویت شما تکمیل گردد.

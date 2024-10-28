@@ -10,7 +10,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/user/register.png"
   light-src="/images/guides/fa/light/user/register.png"
-  alt="Registration image"
+  alt="Registration"
 />
 
 در مرحله بعد برای شما یک ایمیل تایید ارسال می شود، وارد ایمیل خود شده و دکمه تایید را بزنید.  پس از فرآیند ثبت نام شما تکمیل می شود.

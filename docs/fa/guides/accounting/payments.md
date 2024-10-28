@@ -6,7 +6,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/accounting/payments-list.png"
   light-src="/images/guides/fa/light/accounting/payments-list.png"
-  alt="Registration image"
+  alt="Payments List"
 />
 
 ## آخرین پرداخت
@@ -16,5 +16,5 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/accounting/last-payment.png"
   light-src="/images/guides/fa/light/accounting/last-payment.png"
-  alt="Registration image"
+  alt="Last Payment"
 />

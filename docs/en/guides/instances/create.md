@@ -8,7 +8,7 @@ In the first step, you need to choose a name for your cloud server.
 <DarkModeImage
   dark-src="/images/guides/en/dark/instances/name.png"
   light-src="/images/guides/en/light/instances/name.png"
-  alt="Registration image"
+  alt="Instance Name Field"
 />
 
 ## Choose an Operating System
@@ -18,7 +18,7 @@ You can see the list of available operating systems in the image below:
 <DarkModeImage
   dark-src="/images/guides/en/dark/instances/OS.png"
   light-src="/images/guides/en/light/instances/OS.png"
-  alt="Registration image"
+  alt="Select OS"
 />
 
 ## Marketplace
@@ -28,7 +28,7 @@ You can see the list of available software in the marketplace in the image below
 <DarkModeImage
   dark-src="/images/guides/en/dark/instances/marketplace.png"
   light-src="/images/guides/en/light/instances/marketplace.png"
-  alt="Registration image"
+  alt="Marketplace - Ready to use Applications"
 />
 
 ## Choose Resources
@@ -54,7 +54,7 @@ Cloud server packages with higher bandwidth
 <DarkModeImage
   dark-src="/images/guides/en/dark/instances/hardwareOffering.png"
   light-src="/images/guides/en/light/instances/hardwareOffering.png"
-  alt="Registration image"
+  alt="Choose Resource (Hardware Offerings)"
 />
 
 ## Choose Public or Private Network
@@ -64,7 +64,7 @@ In the next step, you need to select a public network with `IPV4` or a public ne
 <DarkModeImage
   dark-src="/images/guides/en/dark/instances/pubNetwork.png"
   light-src="/images/guides/en/light/instances/pubNetwork.png"
-  alt="Registration image"
+  alt="Public Networks"
 />
 
 ## Additional Features
@@ -74,7 +74,7 @@ And in the next step, you can use additional features if needed, which include a
 <DarkModeImage
   dark-src="/images/guides/en/dark/instances/add-feature.png"
   light-src="/images/guides/en/light/instances/add-feature.png"
-  alt="Registration image"
+  alt="SSH authentication key - Cloud Init"
 />
 
 ## Final Registration
@@ -84,5 +84,5 @@ After 3 minutes, your cloud server will be created and a confirmation SMS will b
 <DarkModeImage
   dark-src="/images/guides/en/dark/instances/overal-os-info.png"
   light-src="/images/guides/en/light/instances/overal-os-info.png"
-  alt="Registration image"
+  alt="Overal OS info"
 />

@@ -16,7 +16,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/networks/public-ip.png"
   light-src="/images/guides/fa/light/networks/public-ip.png"
-  alt="Registration image"
+  alt="Public IPs"
 />
 
 

@@ -5,5 +5,5 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/accounting/gifts.png"
   light-src="/images/guides/fa/light/accounting/gifts.png"
-  alt="Registration image"
+  alt="Gifts List"
 />
