@@ -5,5 +5,5 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/tickets/support.png"
   light-src="/images/guides/fa/light/tickets/support.png"
-  alt="Registration image"
+  alt="Tickets list"
 />

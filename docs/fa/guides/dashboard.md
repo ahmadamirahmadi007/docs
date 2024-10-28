@@ -11,7 +11,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/dashboard-resources.png"
   light-src="/images/guides/fa/light/dashboard-resources.png"
-  alt="Registration image"
+  alt="Dashboard Resources"
 />
 
 
@@ -22,7 +22,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/increase-inventory.png"
   light-src="/images/guides/fa/light/increase-inventory.png"
-  alt="Registration image"
+  alt="Increase inventory modal"
 />
 
 ## لینک های نوار بغل
@@ -38,7 +38,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/dashboard-sidebar.png"
   light-src="/images/guides/fa/light/dashboard-sidebar.png"
-  alt="Registration image"
+  alt="Dashboard sidebar"
 />
 
 در ادامه هر یک از بخش ها را جداگانه توضیح می دهیم.

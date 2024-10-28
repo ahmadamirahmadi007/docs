@@ -16,7 +16,7 @@ In this section, you can create your desired firewall.
 <DarkModeImage
   dark-src="/images/guides/en/dark/networks/add-firewall.png"
   light-src="/images/guides/en/light/networks/add-firewall.png"
-  alt="Image of adding firewall"
+  alt="Create firewall"
 />
 
 Users can create rules for inbound and outbound traffic permissions by selecting the following components:
@@ -29,5 +29,5 @@ Users can create rules for inbound and outbound traffic permissions by selecting
 <DarkModeImage
   dark-src="/images/guides/en/dark/networks/firewall-entry.png"
   light-src="/images/guides/en/light/networks/firewall-entry.png"
-  alt="Image of firewall entry"
+  alt="Firewall entry"
 />

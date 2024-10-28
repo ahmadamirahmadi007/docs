@@ -5,5 +5,5 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/accounting/transaction.png"
   light-src="/images/guides/fa/light/accounting/transaction.png"
-  alt="Registration image"
+  alt="Transactions List"
 />

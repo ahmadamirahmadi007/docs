@@ -5,5 +5,5 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/instances/instances-list.png"
   light-src="/images/guides/fa/light/instances/instances-list.png"
-  alt="Registration image"
+  alt="Instances List"
 />

@@ -10,7 +10,7 @@ After logging into the [panel](https://panel.virakcloud.com/), you can view the 
 <DarkModeImage
   dark-src="/images/guides/en/dark/dashboard-resources.png"
   light-src="/images/guides/en/light/dashboard-resources.png"
-  alt="Registration image"
+  alt="Dashboard Resources"
 />
 
 ## Account Charge
@@ -19,7 +19,7 @@ On the right side of the panel, you can view your panel's charge balance. If you
 <DarkModeImage
   dark-src="/images/guides/en/dark/increase-inventory.png"
   light-src="/images/guides/en/light/increase-inventory.png"
-  alt="Registration image"
+  alt="Increase inventory modal"
 />
 
 ## Sidebar Links
@@ -34,7 +34,7 @@ As shown in the image below, you can see the main dashboard on the right side of
 <DarkModeImage
   dark-src="/images/guides/en/dark/dashboard-sidebar.png"
   light-src="/images/guides/en/light/dashboard-sidebar.png"
-  alt="Registration image"
+  alt="Dashboard sidebar"
 />
 
 Each section will be explained separately in the following.

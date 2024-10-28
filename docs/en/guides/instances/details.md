@@ -6,7 +6,7 @@ In this section, the user can manage the created instance and monitor the status
 <DarkModeImage
   dark-src="/images/guides/en/dark/instances/instance-details.png"
   light-src="/images/guides/en/light/instances/instance-details.png"
-  alt="Registration image"
+  alt="Instance Details"
 />
 
 

@@ -5,7 +5,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/networks/add-portforward.png"
   light-src="/images/guides/fa/light/networks/add-portforward.png"
-  alt="Registration image"
+  alt="Create Port Forward"
 />
 
 <!-- todo: we ca explain more about this fields -->
@@ -21,5 +21,5 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/networks/portforward-entry.png"
   light-src="/images/guides/fa/light/networks/portforward-entry.png"
-  alt="Registration image"
+  alt="PortForward entry"
 />

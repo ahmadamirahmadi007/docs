@@ -5,7 +5,7 @@ The load balancing feature allows traffic to be sent to internal network service
 <DarkModeImage
   dark-src="/images/guides/en/dark/networks/add-loadbalance.png"
   light-src="/images/guides/en/light/networks/add-loadbalance.png"
-  alt="Image of adding load balancer"
+  alt="Create LoadBalance"
 />
 
 ## Creating Load Balancing
@@ -19,7 +19,7 @@ This feature works by adding load balancing and selecting the following componen
 <DarkModeImage
   dark-src="/images/guides/en/dark/networks/loadbalance-entry.png"
   light-src="/images/guides/en/light/networks/loadbalance-entry.png"
-  alt="Image of load balancer entry"
+  alt="LoadBalance Entry"
 />
 
 After adding load balancing, you can select your desired instances based on the IP that provides our main service through the load balancer rule creation menu.

@@ -8,7 +8,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/instances/name.png"
   light-src="/images/guides/fa/light/instances/name.png"
-  alt="Registration image"
+  alt="Instance Name Field"
 />
 
 ## انتخاب سیستم عامل
@@ -18,7 +18,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/instances/OS.png"
   light-src="/images/guides/fa/light/instances/OS.png"
-  alt="Registration image"
+  alt="Select OS"
 />
 
 ## بازارچه
@@ -28,7 +28,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/instances/marketplace.png"
   light-src="/images/guides/fa/light/instances/marketplace.png"
-  alt="Registration image"
+  alt="Marketplace - Ready to use Applications"
 />
 
 ## انتخاب منابع
@@ -54,7 +54,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/instances/hardwareOffering.png"
   light-src="/images/guides/fa/light/instances/hardwareOffering.png"
-  alt="Registration image"
+  alt="Choose Resource (Hardware Offerings)"
 />
 
 ## انتخاب شبکه عمومی یا خصوصی
@@ -65,7 +65,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/instances/pubNetwork.png"
   light-src="/images/guides/fa/light/instances/pubNetwork.png"
-  alt="Registration image"
+  alt="Public Networks"
 />
 
 ## ویژگی ها اضافه
@@ -75,7 +75,7 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/instances/add-feature.png"
   light-src="/images/guides/fa/light/instances/add-feature.png"
-  alt="Registration image"
+  alt="SSH authentication key - Cloud Init"
 />
 
 ## ثبت نهایی
@@ -85,5 +85,5 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/instances/overal-os-info.png"
   light-src="/images/guides/fa/light/instances/overal-os-info.png"
-  alt="Registration image"
+  alt="Overal OS info"
 />

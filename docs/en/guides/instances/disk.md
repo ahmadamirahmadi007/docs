@@ -5,7 +5,7 @@ In [this section](https://panel.virakcloud.com/instances/volumes), you can view 
 <DarkModeImage
   dark-src="/images/guides/en/dark/instances/disk/disk-list.png"
   light-src="/images/guides/en/light/instances/disk/disk-list.png"
-  alt="Registration image"
+  alt="Disk list"
 />
 
 ## Create Disk
@@ -15,7 +15,7 @@ You can use this option to create an additional disk of any desired size.
 <DarkModeImage
   dark-src="/images/guides/en/dark/instances/disk/disk-create.png"
   light-src="/images/guides/en/light/instances/disk/disk-create.png"
-  alt="Registration image"
+  alt="Create Disk"
 />
 
 > **Note:** Creating a disk will not automatically connect it to a cloud server. You must use the "Connect to Cloud Server" option to link the disk.

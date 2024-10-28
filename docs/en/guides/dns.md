@@ -5,7 +5,7 @@ You can manage your domains through the user panel in the [Domain Hosting menu](
 <DarkModeImage
   dark-src="/images/guides/en/dark/dns/create-domain.png"
   light-src="/images/guides/en/light/dns/create-domain.png"
-  alt="Domain creation image"
+  alt="Domain Hosting"
 />
 
 To do this, go to the Domain List submenu and create a new domain.
@@ -14,7 +14,7 @@ Note that the domain should be entered without www. After confirmation in the ne
  <DarkModeImage
   dark-src="/images/guides/en/dark/dns/add-domain.png"
   light-src="/images/guides/en/light/dns/add-domain.png"
-  alt="Registration image"
+  alt="Enter Domain"
 />
 
 ::: info Note:
@@ -23,7 +23,7 @@ The Virak Cloud name servers will be displayed in the NS settings box.
  <DarkModeImage
   dark-src="/images/guides/en/dark/dns/add-ns.png"
   light-src="/images/guides/en/light/dns/add-ns.png"
-  alt="Registration image"
+  alt="Add NS"
 />
 
 :::
@@ -36,7 +36,7 @@ The reports in this section are based on the number of requests, types of reques
  <DarkModeImage
   dark-src="/images/guides/en/dark/dns/log.png"
   light-src="/images/guides/en/light/dns/log.png"
-  alt="Registration image"
+  alt="DNS Logs"
 />
 
 ## Records
@@ -44,7 +44,7 @@ The reports in this section are based on the number of requests, types of reques
  <DarkModeImage
   dark-src="/images/guides/en/dark/dns/records.png"
   light-src="/images/guides/en/light/dns/records.png"
-  alt="Registration image"
+  alt="DNS Records"
 />
 
 In the Records menu, you can perform the following

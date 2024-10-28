@@ -5,5 +5,5 @@ In the [ticket list](https://panel.virakcloud.com/user/ticket/dashboard) section
 <DarkModeImage
   dark-src="/images/guides/en/dark/tickets/support.png"
   light-src="/images/guides/en/light/tickets/support.png"
-  alt="Registration image"
+  alt="Tickets List"
 />

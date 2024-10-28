@@ -9,5 +9,5 @@
 <DarkModeImage
   dark-src="/images/guides/fa/dark/tickets/register-req.png"
   light-src="/images/guides/fa/light/tickets/register-req.png"
-  alt="Registration image"
+  alt="Ticket create"
 />

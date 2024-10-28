@@ -7,7 +7,7 @@ In the [Payments section](https://panel.virakcloud.com/accounting/payment/list#l
 <DarkModeImage
   dark-src="/images/guides/en/dark/accounting/payments-list.png"
   light-src="/images/guides/en/light/accounting/payments-list.png"
-  alt="Registration image"
+  alt="Payments List"
 />
 
 ## Last Payment
@@ -18,5 +18,5 @@ In the second tab, you can also view the status of your last payment.
 <DarkModeImage
   dark-src="/images/guides/en/dark/accounting/last-payment.png"
   light-src="/images/guides/en/light/accounting/last-payment.png"
-  alt="Registration image"
+  alt="Last Payment"
 />
