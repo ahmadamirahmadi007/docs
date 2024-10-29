@@ -16,7 +16,7 @@ const github_link_url = 'https://github.com/virakCloud/docs/edit/main/docs/:path
 export default defineConfig({
   // shared properties and other top-level stuff...
   lang: 'fa-IR',
-  cleanUrls: true,
+  cleanUrls: false,
   // title: "Virak Cloud",
   // description: "",
   sitemap: {
