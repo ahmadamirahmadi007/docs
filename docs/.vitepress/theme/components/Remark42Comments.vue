@@ -9,7 +9,7 @@ const { isDark } = useData();
 
 function initRemark42() {
   console.log("Initializing Remark42...");
-  console.log(route.path.replace('.html', ''));
+  // console.log(route.path.replace('.html', ''));
 
   if (window.REMARK42 && !import.meta.env.SSR) {
     if (remark42Instance.value) {
@@ -17,7 +17,7 @@ function initRemark42() {
     }
     remark42Instance.value = window.REMARK42.createInstance({
       node: remark42.value,
-      url: window.location.origin + route.path.replace('index.html', ''),
+      url: window.location.origin + route.path, // .replace('index.html', ''),
       ...window.remark_config,
     });
   }
@@ -55,12 +55,12 @@ onUnmounted(() => {
   }
 });
 
-watch(() => route.path, initRemark42); // Reinitialize on route change
+// watch(() => route.path, initRemark42); // Reinitialize on route change
 
 // Watch for theme changes, update remark_config, reload script, and reinitialize
-watch(isDark, (newVal) => {
+watch([()=>isDark , ()=>route.path], ([newIsDarkVal , newRoutePathVal]) => {
   nextTick(() => {
-    window.remark_config.theme = newVal ? "dark" : "light";
+    window.remark_config.theme = newIsDarkVal ? "dark" : "light";
     console.log("Theme updated in remark_config:", window.remark_config.theme);
 
     if (remark42Instance.value) {

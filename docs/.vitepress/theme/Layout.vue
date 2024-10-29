@@ -72,8 +72,8 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 </script>
 <template>
   <DefaultTheme.Layout />
-  <Teleport to="#VPContent .content-container" defer>
-    <CommentBox v-if="contentLoaded" />
+  <Teleport v-if="contentLoaded" to="#VPContent .content-container" defer>
+    <CommentBox />
   </Teleport>
 </template>
 <style>
