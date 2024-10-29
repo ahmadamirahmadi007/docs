@@ -1,11 +1,16 @@
 <script setup>
-import { nextTick, onMounted, onUnmounted, ref, watch } from "vue";
+import { nextTick, computed, onMounted, onUnmounted, ref, watch } from "vue";
 import { useRoute, useData } from "vitepress";
 
 const remark42 = ref("");
 const remark42Instance = ref("");
 const route = useRoute();
 const { isDark } = useData();
+
+
+const fullPath = computed(() => {
+  return window.location.origin + route.path
+})
 
 function initRemark42() {
   console.log("Initializing Remark42...");
@@ -17,7 +22,7 @@ function initRemark42() {
     }
     remark42Instance.value = window.REMARK42.createInstance({
       node: remark42.value,
-      url: window.location.origin + route.path, // .replace('index.html', ''),
+      url: fullPath.value, // .replace('index.html', ''),
       ...window.remark_config,
     });
   }
@@ -58,17 +63,24 @@ onUnmounted(() => {
 // watch(() => route.path, initRemark42); // Reinitialize on route change
 
 // Watch for theme changes, update remark_config, reload script, and reinitialize
-watch([()=>isDark , ()=>route.path], ([newIsDarkVal , newRoutePathVal]) => {
+watch([() => isDark.value, () => route.path], ([newIsDarkVal, newRoute], [oldIsDarkVal, oldRoute]) => {
   nextTick(() => {
-    window.remark_config.theme = newIsDarkVal ? "dark" : "light";
+
+    if (newIsDarkVal !== oldIsDarkVal) {
+      window.remark_config.theme = newIsDarkVal ? "dark" : "light";
+    }
+    if (newRoute !== oldRoute) {
+      window.remark_config.url = fullPath.value
+    }
     console.log("Theme updated in remark_config:", window.remark_config.theme);
+    console.log("Route updated in remark_config:", window.remark_config.host);
 
     if (remark42Instance.value) {
       remark42Instance.value.destroy();
     }
 
     loadRemarkScript();
-    window.addEventListener("REMARK42::ready", initRemark42);
+    // window.addEventListener("REMARK42::ready", initRemark42);
   });
 });
 </script>
