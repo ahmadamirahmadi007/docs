@@ -2,11 +2,14 @@
 <script setup lang="ts">
 import { useData, useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import { nextTick, provide, onMounted, watch } from 'vue'
+import { ref, nextTick, provide, onMounted, watch } from 'vue'
 import mediumZoom from 'medium-zoom';
 
 
 const { isDark } = useData()
+
+// todo: check in production and if dont work for load comment after content remove this
+const contentLoaded = ref(false);
 
 
 const router = useRoute()
@@ -19,8 +22,12 @@ const applyZoom = () => {
 };
 
 
-onMounted(() => {
+onMounted(async () => {
   applyZoom();
+
+  // todo: check in production and if dont work for load comment after content remove this two line
+  await nextTick();
+  contentLoaded.value = true;
 });
 
 watch([() => isDark.value, () => router.path], () => {
@@ -66,7 +73,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 <template>
   <DefaultTheme.Layout />
   <Teleport to="#VPContent .content-container" defer>
-    <CommentBox />
+    <CommentBox v-if="contentLoaded" />
   </Teleport>
 </template>
 <style>

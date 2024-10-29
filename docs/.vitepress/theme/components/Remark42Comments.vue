@@ -9,6 +9,7 @@ const { isDark } = useData();
 
 function initRemark42() {
   console.log("Initializing Remark42...");
+  console.log(route.path.replace('.html', ''));
 
   if (window.REMARK42 && !import.meta.env.SSR) {
     if (remark42Instance.value) {
@@ -16,7 +17,7 @@ function initRemark42() {
     }
     remark42Instance.value = window.REMARK42.createInstance({
       node: remark42.value,
-      url: window.location.origin + route.path,
+      url: window.location.origin + route.path.replace('index.html', ''),
       ...window.remark_config,
     });
   }
@@ -32,7 +33,8 @@ function loadRemarkScript() {
   document.body.appendChild(scriptTag);
 }
 
-onMounted(() => {
+onMounted(async () => {
+  await nextTick(); // Ensures the layout is fully rendered
   window.remark_config = {
     host: "https://comment.docs.dev.virakcloud.net", // Update to your host
     site_id: "remark",
@@ -53,7 +55,7 @@ onUnmounted(() => {
   }
 });
 
-watch(()=>route.path, initRemark42); // Reinitialize on route change
+watch(() => route.path, initRemark42); // Reinitialize on route change
 
 // Watch for theme changes, update remark_config, reload script, and reinitialize
 watch(isDark, (newVal) => {
@@ -70,17 +72,14 @@ watch(isDark, (newVal) => {
   });
 });
 </script>
-
 <template>
   <div id="remark42" ref="remark42"></div>
 </template>
-
 <style>
-.root__copyright{
+.root__copyright {
   display: none;
 }
 </style>
-
 <!-- <template>
   <div id="remark42" ref="remark42"></div>
 </template>
