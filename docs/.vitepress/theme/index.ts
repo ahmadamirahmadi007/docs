@@ -17,6 +17,9 @@ export default {
   //   })
   // },
   enhanceApp({ app, router, siteData }) {
+    // app.config.globalProperties.$paths = {
+    //   gifts: 'https://panel.virakcloud.com/accounting/gifts/list'
+    // }
     app.component('DarkModeImage', DarkModeImage)
     app.component('CommentBox', Remark42Comments)
 
