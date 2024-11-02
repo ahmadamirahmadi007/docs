@@ -44,6 +44,8 @@ onMounted(async () => {
     host: "https://comment.docs.dev.virakcloud.net", // Update to your host
     site_id: "remark",
     theme: isDark.value ? "dark" : "light",
+    no_footer: true,
+    // simple_view: false,
   };
 
   if (window.REMARK42) {
@@ -63,16 +65,18 @@ onUnmounted(() => {
 // watch(() => route.path, initRemark42); // Reinitialize on route change
 
 // Watch for theme changes, update remark_config, reload script, and reinitialize
-watch([() => isDark.value, () => route.path], ([newIsDarkVal, newRoute], [oldIsDarkVal, oldRoute]) => {
+watch(() => isDark.value, (newIsDarkVal , oldIsDarkVal) => {
   nextTick(() => {
-
     if (newIsDarkVal !== oldIsDarkVal) {
-      window.remark_config.theme = newIsDarkVal ? "dark" : "light";
+      window.REMARK42.changeTheme(newIsDarkVal ? "dark" : "light")
     }
+  });
+});
+
+watch(()=> route.path, (newRoute , oldRoute)=>{
     if (newRoute !== oldRoute) {
       window.remark_config.url = fullPath.value
     }
-    console.log("Theme updated in remark_config:", window.remark_config.theme);
     console.log("Route updated in remark_config:", window.remark_config.host);
 
     if (remark42Instance.value) {
@@ -80,9 +84,7 @@ watch([() => isDark.value, () => route.path], ([newIsDarkVal, newRoute], [oldIsD
     }
 
     loadRemarkScript();
-    // window.addEventListener("REMARK42::ready", initRemark42);
-  });
-});
+})
 </script>
 <template>
   <div id="remark42" ref="remark42"></div>
