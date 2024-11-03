@@ -5,7 +5,7 @@ import { useRoute, useData } from "vitepress";
 const remark42 = ref("");
 const remark42Instance = ref("");
 const route = useRoute();
-const { isDark } = useData();
+const { isDark , lang } = useData();
 
 
 const fullPath = computed(() => {
@@ -45,6 +45,7 @@ onMounted(async () => {
     site_id: "remark",
     theme: isDark.value ? "dark" : "light",
     no_footer: true,
+    locale : lang.value
     // simple_view: false,
   };
 
@@ -73,16 +74,16 @@ watch(() => isDark.value, (newIsDarkVal , oldIsDarkVal) => {
   });
 });
 
-watch(()=> route.path, (newRoute , oldRoute)=>{
+watch([()=> route.path , ()=> lang.value], ([newRoute , newLang] , [oldRoute , oldLang])=>{
     if (newRoute !== oldRoute) {
       window.remark_config.url = fullPath.value
     }
-    console.log("Route updated in remark_config:", window.remark_config.host);
-
+    if (newLang !== oldLang) {
+      window.remark_config.locale = newLang
+    }
     if (remark42Instance.value) {
       remark42Instance.value.destroy();
     }
-
     loadRemarkScript();
 })
 </script>
