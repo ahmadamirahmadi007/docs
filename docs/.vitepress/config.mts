@@ -23,7 +23,30 @@ export default defineConfig({
     // todo : later check this
     hostname: process.env.VITE_SITEURL ?? ''
   },
-  head: [['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]],
+  head: [
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      }
+    ],
+    [
+      'meta',
+      {
+        'http-equiv': 'Content-Security-Policy',
+        content: "default-src 'self'; font-src 'self' data: https://comment.docs.dev.virakcloud.net;",
+      },
+    ],
+    // [
+    //   'meta',
+    //   {
+    //     'http-equiv': 'Content-Security-Policy',
+    //     content: "font-src data: https://comment.docs.dev.virakcloud.net;"
+    //   }
+    // ]
+  ],
   // dir : '/',
   // outDir : './dist',
   // cacheDir : './',
