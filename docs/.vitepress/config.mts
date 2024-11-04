@@ -32,13 +32,13 @@ export default defineConfig({
         href: '/favicon.ico'
       }
     ],
-    [
-      'meta',
-      {
-        'http-equiv': 'Content-Security-Policy',
-        content: "default-src 'self'; font-src 'self' data: https://comment.docs.dev.virakcloud.net;",
-      },
-    ],
+    // [
+    //   'meta',
+    //   { 'http-equiv': 'Content-Security-Policy', content: "default-src 'self';script-src 'self' ; font-src 'self' data: https://comment.docs.dev.virakcloud.net;" },
+    // ],
+    // todo : remove this in production
+    // ['meta', { 'http-equiv': 'Content-Security-Policy', content: "default-src 'self' ;img-src 'self' data: http://www.w3.org; font-src 'self' https://comment.docs.dev.virakcloud.net;" }],
+    
     // [
     //   'meta',
     //   {
