@@ -90,7 +90,7 @@ export default defineConfig({
   },
   lastUpdated: false,
   themeConfig: {
-    logo: '/images/logo-final.png',
+    logo: '/images/logo-final.webp',
     search: {
       provider: 'local',
       options: {

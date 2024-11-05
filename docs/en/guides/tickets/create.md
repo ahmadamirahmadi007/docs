@@ -7,7 +7,7 @@ Before creating a new ticket, you can check the FAQs section to find answers to 
 :::
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/tickets/register-req.png"
-  light-src="/images/guides/en/light/tickets/register-req.png"
+  dark-src="/images/guides/en/dark/tickets/register-req.webp"
+  light-src="/images/guides/en/light/tickets/register-req.webp"
   alt="Create Ticket"
 />

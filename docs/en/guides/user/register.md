@@ -7,8 +7,8 @@ First, go to the [registration page](https://panel.virakcloud.com/user/register)
 After reading the rules, click the "I accept the rules" icon at the bottom of the page and proceed to the next step.
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/user/register.png"
-  light-src="/images/guides/en/light/user/register.png"
+  dark-src="/images/guides/en/dark/user/register.webp"
+  light-src="/images/guides/en/light/user/register.webp"
   alt="Registration"
 />
 

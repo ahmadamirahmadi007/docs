@@ -13,8 +13,8 @@ Details of layer 2 + 3 networks include the following.
 As soon as a private network of the virtual router type is created and the first cloud is connected to it, the virtual router will receive a visible public IP address by default, which will be used as the Source NAT operation to establish communication between the connected clouds to the outside network.
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/networks/public-ip.png"
-  light-src="/images/guides/en/light/networks/public-ip.png"
+  dark-src="/images/guides/en/dark/networks/public-ip.webp"
+  light-src="/images/guides/en/light/networks/public-ip.webp"
   alt="Public IPs"
 />
 

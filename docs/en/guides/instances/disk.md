@@ -3,8 +3,8 @@
 In [this section](https://panel.virakcloud.com/instances/volumes), you can view the list of disks you have added to your cloud servers and make necessary changes to these disks.
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/instances/disk/disk-list.png"
-  light-src="/images/guides/en/light/instances/disk/disk-list.png"
+  dark-src="/images/guides/en/dark/instances/disk/disk-list.webp"
+  light-src="/images/guides/en/light/instances/disk/disk-list.webp"
   alt="Disk list"
 />
 
@@ -13,8 +13,8 @@ In [this section](https://panel.virakcloud.com/instances/volumes), you can view 
 You can use this option to create an additional disk of any desired size.
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/instances/disk/disk-create.png"
-  light-src="/images/guides/en/light/instances/disk/disk-create.png"
+  dark-src="/images/guides/en/dark/instances/disk/disk-create.webp"
+  light-src="/images/guides/en/light/instances/disk/disk-create.webp"
   alt="Create Disk"
 />
 

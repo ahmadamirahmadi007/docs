@@ -3,8 +3,8 @@
 قابلیت توزیع بار امکان ارسال ترافیک به سمت سرویس های داخلی شبکه مورد نظر را به صورت توزیع شده و با الگوریتم های `Round Robin` , `Least connection` به کار می دهد.
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/networks/add-loadbalance.png"
-  light-src="/images/guides/fa/light/networks/add-loadbalance.png"
+  dark-src="/images/guides/fa/dark/networks/add-loadbalance.webp"
+  light-src="/images/guides/fa/light/networks/add-loadbalance.webp"
   alt="Create LoadBalance"
 />
 
@@ -17,8 +17,8 @@
 - پورت خصوصی:  که بر روی سرویس اصلی توسط کاربر تنظیم شده است
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/networks/loadbalance-entry.png"
-  light-src="/images/guides/fa/light/networks/loadbalance-entry.png"
+  dark-src="/images/guides/fa/dark/networks/loadbalance-entry.webp"
+  light-src="/images/guides/fa/light/networks/loadbalance-entry.webp"
   alt="LoadBalance Entry"
 />
 

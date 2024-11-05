@@ -3,8 +3,8 @@
 This [section](https://panel.virakcloud.com/instances/network/list) includes information about public networks as well as private Layer 2 and Layer 2 + 3 networks. In the last column, the subscriber can perform operations such as connecting to and disconnecting from instances, deleting networks, and configuring the desired network by entering the details section.
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/networks/Network-Detail.png"
-  light-src="/images/guides/en/light/networks/Network-Detail.png"
+  dark-src="/images/guides/en/dark/networks/Network-Detail.webp"
+  light-src="/images/guides/en/light/networks/Network-Detail.webp"
   alt="Network Details"
 />
 
@@ -35,7 +35,7 @@ If no instance is connected to the desired network, the user can delete their ne
 By entering the details section, we can benefit from the capabilities and detailed settings related to the network.
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/networks/inside-Network.png"
-  light-src="/images/guides/en/light/networks/inside-Network.png"
+  dark-src="/images/guides/en/dark/networks/inside-Network.webp"
+  light-src="/images/guides/en/light/networks/inside-Network.webp"
   alt="Inside Network Details"
 />

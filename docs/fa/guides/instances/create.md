@@ -6,8 +6,8 @@
 در گام اول شما باید یک نام برای ابرک خود انتخاب نمایید.
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/instances/name.png"
-  light-src="/images/guides/fa/light/instances/name.png"
+  dark-src="/images/guides/fa/dark/instances/name.webp"
+  light-src="/images/guides/fa/light/instances/name.webp"
   alt="Instance Name Field"
 />
 
@@ -16,8 +16,8 @@
 لیست سیستم عامل های موجود را می توانید در تصویر زیر مشاهده نمایید :
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/instances/OS.png"
-  light-src="/images/guides/fa/light/instances/OS.png"
+  dark-src="/images/guides/fa/dark/instances/OS.webp"
+  light-src="/images/guides/fa/light/instances/OS.webp"
   alt="Select OS"
 />
 
@@ -26,8 +26,8 @@
 لیست نرم افزارهای موجود در بازارچه را می توانید در تصویر زیر مشاهده نمایید :
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/instances/marketplace.png"
-  light-src="/images/guides/fa/light/instances/marketplace.png"
+  dark-src="/images/guides/fa/dark/instances/marketplace.webp"
+  light-src="/images/guides/fa/light/instances/marketplace.webp"
   alt="Marketplace - Ready to use Applications"
 />
 
@@ -52,8 +52,8 @@
 بسته های سرور ابری با پهنای بالاتر
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/instances/hardwareOffering.png"
-  light-src="/images/guides/fa/light/instances/hardwareOffering.png"
+  dark-src="/images/guides/fa/dark/instances/hardwareOffering.webp"
+  light-src="/images/guides/fa/light/instances/hardwareOffering.webp"
   alt="Choose Resource (Hardware Offerings)"
 />
 
@@ -63,8 +63,8 @@
 (همچنین می توانید از شبکه خصوصی برای سرور ابری خود نیز استفاده نمایید که جلوتر توضیحات آن ارائه می گردد).
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/instances/pubNetwork.png"
-  light-src="/images/guides/fa/light/instances/pubNetwork.png"
+  dark-src="/images/guides/fa/dark/instances/pubNetwork.webp"
+  light-src="/images/guides/fa/light/instances/pubNetwork.webp"
   alt="Public Networks"
 />
 
@@ -73,8 +73,8 @@
 
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/instances/add-feature.png"
-  light-src="/images/guides/fa/light/instances/add-feature.png"
+  dark-src="/images/guides/fa/dark/instances/add-feature.webp"
+  light-src="/images/guides/fa/light/instances/add-feature.webp"
   alt="SSH authentication key - Cloud Init"
 />
 
@@ -83,7 +83,7 @@
 پس از 3 دقیقه سرور ابری شما ساخته شده و پیامک تایید آن برای شما ارسال می گردد.
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/instances/overal-os-info.png"
-  light-src="/images/guides/fa/light/instances/overal-os-info.png"
+  dark-src="/images/guides/fa/dark/instances/overal-os-info.webp"
+  light-src="/images/guides/fa/light/instances/overal-os-info.webp"
   alt="Overal OS info"
 />

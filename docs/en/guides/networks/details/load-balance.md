@@ -3,8 +3,8 @@
 The load balancing feature allows traffic to be sent to internal network services in a distributed manner using `Round Robin` and `Least Connection` algorithms.
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/networks/add-loadbalance.png"
-  light-src="/images/guides/en/light/networks/add-loadbalance.png"
+  dark-src="/images/guides/en/dark/networks/add-loadbalance.webp"
+  light-src="/images/guides/en/light/networks/add-loadbalance.webp"
   alt="Create LoadBalance"
 />
 
@@ -17,8 +17,8 @@ This feature works by adding load balancing and selecting the following componen
 - Private Port: Set by the user on the main service
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/networks/loadbalance-entry.png"
-  light-src="/images/guides/en/light/networks/loadbalance-entry.png"
+  dark-src="/images/guides/en/dark/networks/loadbalance-entry.webp"
+  light-src="/images/guides/en/light/networks/loadbalance-entry.webp"
   alt="LoadBalance Entry"
 />
 

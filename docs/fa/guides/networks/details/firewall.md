@@ -14,8 +14,8 @@
 
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/networks/add-firewall.png"
-  light-src="/images/guides/fa/light/networks/add-firewall.png"
+  dark-src="/images/guides/fa/dark/networks/add-firewall.webp"
+  light-src="/images/guides/fa/light/networks/add-firewall.webp"
   alt="Create firewall"
 />
 
@@ -29,7 +29,7 @@
 - آدرس مقصد
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/networks/firewall-entry.png"
-  light-src="/images/guides/fa/light/networks/firewall-entry.png"
+  dark-src="/images/guides/fa/dark/networks/firewall-entry.webp"
+  light-src="/images/guides/fa/light/networks/firewall-entry.webp"
   alt="Firewall entry"
 />

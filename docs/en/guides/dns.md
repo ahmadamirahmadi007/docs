@@ -3,8 +3,8 @@
 You can manage your domains through the user panel in the [Domain Hosting menu](https://panel.virakcloud.com/dns/list).
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/dns/create-domain.png"
-  light-src="/images/guides/en/light/dns/create-domain.png"
+  dark-src="/images/guides/en/dark/dns/create-domain.webp"
+  light-src="/images/guides/en/light/dns/create-domain.webp"
   alt="Domain Hosting"
 />
 
@@ -12,8 +12,8 @@ To do this, go to the Domain List submenu and create a new domain.
 Note that the domain should be entered without www. After confirmation in the next step, you must register the Virak Cloud name servers (NS) through your domain registrar's panel or the website where you purchased your domain, or replace the previous name servers.
 
  <DarkModeImage
-  dark-src="/images/guides/en/dark/dns/add-domain.png"
-  light-src="/images/guides/en/light/dns/add-domain.png"
+  dark-src="/images/guides/en/dark/dns/add-domain.webp"
+  light-src="/images/guides/en/light/dns/add-domain.webp"
   alt="Enter Domain"
 />
 
@@ -21,8 +21,8 @@ Note that the domain should be entered without www. After confirmation in the ne
 The Virak Cloud name servers will be displayed in the NS settings box.
 
  <DarkModeImage
-  dark-src="/images/guides/en/dark/dns/add-ns.png"
-  light-src="/images/guides/en/light/dns/add-ns.png"
+  dark-src="/images/guides/en/dark/dns/add-ns.webp"
+  light-src="/images/guides/en/light/dns/add-ns.webp"
   alt="Add NS"
 />
 
@@ -34,16 +34,16 @@ After confirming and registering the domain, you can create DNS records through 
 The reports in this section are based on the number of requests, types of requested records, and the location of requests based on geographical area.
 
  <DarkModeImage
-  dark-src="/images/guides/en/dark/dns/log.png"
-  light-src="/images/guides/en/light/dns/log.png"
+  dark-src="/images/guides/en/dark/dns/log.webp"
+  light-src="/images/guides/en/light/dns/log.webp"
   alt="DNS Logs"
 />
 
 ## Records
 
  <DarkModeImage
-  dark-src="/images/guides/en/dark/dns/records.png"
-  light-src="/images/guides/en/light/dns/records.png"
+  dark-src="/images/guides/en/dark/dns/records.webp"
+  light-src="/images/guides/en/light/dns/records.webp"
   alt="DNS Records"
 />
 

@@ -4,8 +4,8 @@
 
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/instances/instance-details.png"
-  light-src="/images/guides/fa/light/instances/instance-details.png"
+  dark-src="/images/guides/fa/dark/instances/instance-details.webp"
+  light-src="/images/guides/fa/light/instances/instance-details.webp"
   alt="Instance Details"
 />
 
