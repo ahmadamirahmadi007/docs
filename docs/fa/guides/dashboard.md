@@ -9,8 +9,8 @@
 
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/dashboard-resources.png"
-  light-src="/images/guides/fa/light/dashboard-resources.png"
+  dark-src="/images/guides/fa/dark/dashboard-resources.webp"
+  light-src="/images/guides/fa/light/dashboard-resources.webp"
   alt="Dashboard Resources"
 />
 
@@ -20,8 +20,8 @@
 در سمت راست پنل شما می توانید میزان شارژ پنل خود را مشاهده نمایید، همچنین اگر نیاز به افزایش موجودی شارژ پنل داشته باشید نیز می توانید  در این قسمت واریزی خود را انجام دهید
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/increase-inventory.png"
-  light-src="/images/guides/fa/light/increase-inventory.png"
+  dark-src="/images/guides/fa/dark/increase-inventory.webp"
+  light-src="/images/guides/fa/light/increase-inventory.webp"
   alt="Increase inventory modal"
 />
 
@@ -36,8 +36,8 @@
 5. گزارش تغییرات
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/dashboard-sidebar.png"
-  light-src="/images/guides/fa/light/dashboard-sidebar.png"
+  dark-src="/images/guides/fa/dark/dashboard-sidebar.webp"
+  light-src="/images/guides/fa/light/dashboard-sidebar.webp"
   alt="Dashboard sidebar"
 />
 

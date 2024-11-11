@@ -8,8 +8,8 @@
 
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/user/register.png"
-  light-src="/images/guides/fa/light/user/register.png"
+  dark-src="/images/guides/fa/dark/user/register.webp"
+  light-src="/images/guides/fa/light/user/register.webp"
   alt="Registration"
 />
 

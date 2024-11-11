@@ -11,7 +11,7 @@ dotenv.config({
 });
 
 
-const github_link_url = 'https://github.com/virakCloud/docs/edit/main/docs/:path'
+const github_link_url = 'https://github.com/virak-cloud/docs/edit/main/docs/:path'
 
 export default defineConfig({
   // shared properties and other top-level stuff...
@@ -38,14 +38,14 @@ export default defineConfig({
     // ],
     // todo : remove this in production
     // ['meta', { 'http-equiv': 'Content-Security-Policy', content: "default-src 'self' ;img-src 'self' data: http://www.w3.org; font-src 'self' https://comment.docs.dev.virakcloud.net;" }],
-    
-    // [
-    //   'meta',
-    //   {
-    //     'http-equiv': 'Content-Security-Policy',
-    //     content: "font-src data: https://comment.docs.dev.virakcloud.net;"
-    //   }
-    // ]
+
+    [
+      'meta',
+      {
+        'http-equiv': 'Content-Security-Policy',
+        content: "default-src 'self' http://comment.docs.dev.virakcloud.net;script-src 'self' ;img-src 'self' data: http://www.w3.org;font-src 'self' https://comment.docs.dev.virakcloud.net;frame-src 'self' http://comment.docs.dev.virakcloud.net"
+      }
+    ]
   ],
   // dir : '/',
   // outDir : './dist',
@@ -90,7 +90,7 @@ export default defineConfig({
   },
   lastUpdated: false,
   themeConfig: {
-    logo: '/images/logo-final.png',
+    logo: '/images/logo-final.webp',
     search: {
       provider: 'local',
       options: {
@@ -320,7 +320,14 @@ export default defineConfig({
         // footer: {
         //   copyright: 'Copyright © 2020-present <a href="https://virakcloud.com">Virak Cloud ☁️</a>'
         // },
-      }
+        // notFound: {
+        //   title: 'صفحه مورد نظر پیدا نشد',
+        //   quote: "صفحه‌ای که به دنبال آن هستید وجود ندارد یا جابجا شده است.",
+        //   linkLabel: 'برو به خانه', // aria-label
+        //   linkText: 'رفتن به خانه',
+        //   code: '۴۰۴'
+        // }
+      },
     },
     en: {
       label: 'English',
@@ -461,8 +468,10 @@ export default defineConfig({
               }
             ]
           }
-
         ],
+        // notFound: {
+        //   quote: "The page you are looking for does not exist or has been moved.",
+        // }
         // footer: {
         //   copyright: 'Copyright © 2020-present <a href="https://virakcloud.com/">Virak Cloud ☁️</a>'
         // }

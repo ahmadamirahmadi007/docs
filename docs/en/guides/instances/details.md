@@ -4,8 +4,8 @@ In this section, the user can manage the created instance and monitor the status
 
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/instances/instance-details.png"
-  light-src="/images/guides/en/light/instances/instance-details.png"
+  dark-src="/images/guides/en/dark/instances/instance-details.webp"
+  light-src="/images/guides/en/light/instances/instance-details.webp"
   alt="Instance Details"
 />
 

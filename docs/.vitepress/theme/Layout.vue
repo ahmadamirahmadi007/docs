@@ -1,5 +1,6 @@
 <!-- .vitepress/theme/Layout.vue -->
 <script setup lang="ts">
+import NotFound from "./components/404.vue"
 import { useData, useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { ref, nextTick, provide, onMounted, watch } from 'vue'
@@ -12,7 +13,7 @@ const { isDark } = useData()
 const contentLoaded = ref(false);
 
 
-const router = useRoute()
+const route = useRoute()
 
 const applyZoom = () => {
   mediumZoom('[data-zoomable]', {
@@ -30,7 +31,7 @@ onMounted(async () => {
   contentLoaded.value = true;
 });
 
-watch([() => isDark.value, () => router.path], () => {
+watch([() => isDark.value, () => route.path], () => {
   nextTick(() => {
     applyZoom();
   })
@@ -71,7 +72,11 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 
 </script>
 <template>
-  <DefaultTheme.Layout />
+  <DefaultTheme.Layout>
+    <template #not-found>
+       <not-found/>
+    </template>
+  </DefaultTheme.Layout>
   <Teleport v-if="contentLoaded" to="#VPContent .content-container" defer>
     <CommentBox />
   </Teleport>

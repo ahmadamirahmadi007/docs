@@ -3,8 +3,8 @@
 In this section, we can forward incoming traffic to a public IP address and a specific port to an instance with a specific port.
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/networks/add-portforward.png"
-  light-src="/images/guides/en/light/networks/add-portforward.png"
+  dark-src="/images/guides/en/dark/networks/add-portforward.webp"
+  light-src="/images/guides/en/light/networks/add-portforward.webp"
   alt="Create portforward"
 />
 
@@ -19,7 +19,7 @@ The components are as follows:
 - Private port range
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/networks/portforward-entry.png"
-  light-src="/images/guides/en/light/networks/portforward-entry.png"
+  dark-src="/images/guides/en/dark/networks/portforward-entry.webp"
+  light-src="/images/guides/en/light/networks/portforward-entry.webp"
   alt="PortForward entry"
 />

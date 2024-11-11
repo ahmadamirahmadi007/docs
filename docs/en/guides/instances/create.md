@@ -6,8 +6,8 @@ To create a cloud server, you need to proceed from [this section](https://panel.
 In the first step, you need to choose a name for your cloud server.
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/instances/name.png"
-  light-src="/images/guides/en/light/instances/name.png"
+  dark-src="/images/guides/en/dark/instances/name.webp"
+  light-src="/images/guides/en/light/instances/name.webp"
   alt="Instance Name Field"
 />
 
@@ -16,8 +16,8 @@ In the next step, you need to select the operating system you require.
 You can see the list of available operating systems in the image below:
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/instances/OS.png"
-  light-src="/images/guides/en/light/instances/OS.png"
+  dark-src="/images/guides/en/dark/instances/OS.webp"
+  light-src="/images/guides/en/light/instances/OS.webp"
   alt="Select OS"
 />
 
@@ -26,8 +26,8 @@ You can also select the software you need from the marketplace section.
 You can see the list of available software in the marketplace in the image below:
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/instances/marketplace.png"
-  light-src="/images/guides/en/light/instances/marketplace.png"
+  dark-src="/images/guides/en/dark/instances/marketplace.webp"
+  light-src="/images/guides/en/light/instances/marketplace.webp"
   alt="Marketplace - Ready to use Applications"
 />
 
@@ -52,8 +52,8 @@ Cloud server packages with higher hard drive
 Cloud server packages with higher bandwidth
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/instances/hardwareOffering.png"
-  light-src="/images/guides/en/light/instances/hardwareOffering.png"
+  dark-src="/images/guides/en/dark/instances/hardwareOffering.webp"
+  light-src="/images/guides/en/light/instances/hardwareOffering.webp"
   alt="Choose Resource (Hardware Offerings)"
 />
 
@@ -62,8 +62,8 @@ In the next step, you need to select a public network with `IPV4` or a public ne
 (You can also use a private network for your cloud server, which will be explained further).
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/instances/pubNetwork.png"
-  light-src="/images/guides/en/light/instances/pubNetwork.png"
+  dark-src="/images/guides/en/dark/instances/pubNetwork.webp"
+  light-src="/images/guides/en/light/instances/pubNetwork.webp"
   alt="Public Networks"
 />
 
@@ -72,8 +72,8 @@ And in the next step, you can use additional features if needed, which include a
 
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/instances/add-feature.png"
-  light-src="/images/guides/en/light/instances/add-feature.png"
+  dark-src="/images/guides/en/dark/instances/add-feature.webp"
+  light-src="/images/guides/en/light/instances/add-feature.webp"
   alt="SSH authentication key - Cloud Init"
 />
 
@@ -82,7 +82,7 @@ In the last step, to register your order and create a cloud server, you need to 
 After 3 minutes, your cloud server will be created and a confirmation SMS will be sent to you.
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/instances/overal-os-info.png"
-  light-src="/images/guides/en/light/instances/overal-os-info.png"
+  dark-src="/images/guides/en/dark/instances/overal-os-info.webp"
+  light-src="/images/guides/en/light/instances/overal-os-info.webp"
   alt="Overal OS info"
 />

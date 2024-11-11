@@ -4,8 +4,8 @@
 
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/networks/Network-Detail.png"
-  light-src="/images/guides/fa/light/networks/Network-Detail.png"
+  dark-src="/images/guides/fa/dark/networks/Network-Detail.webp"
+  light-src="/images/guides/fa/light/networks/Network-Detail.webp"
   alt="Network Details"
 />
 
@@ -39,7 +39,7 @@
 با ورود به بخش جزئیات میتوانیم از قابلیت ها و تنظیمات جزئی مربوط به شبکه بهره مند شویم.
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/networks/inside-Network.png"
-  light-src="/images/guides/fa/light/networks/inside-Network.png"
+  dark-src="/images/guides/fa/dark/networks/inside-Network.webp"
+  light-src="/images/guides/fa/light/networks/inside-Network.webp"
   alt="Network Details"
 />

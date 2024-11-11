@@ -14,8 +14,8 @@ In this section, you can create your desired firewall.
 
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/networks/add-firewall.png"
-  light-src="/images/guides/en/light/networks/add-firewall.png"
+  dark-src="/images/guides/en/dark/networks/add-firewall.webp"
+  light-src="/images/guides/en/light/networks/add-firewall.webp"
   alt="Create firewall"
 />
 
@@ -27,7 +27,7 @@ Users can create rules for inbound and outbound traffic permissions by selecting
 - Destination address
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/networks/firewall-entry.png"
-  light-src="/images/guides/en/light/networks/firewall-entry.png"
+  dark-src="/images/guides/en/dark/networks/firewall-entry.webp"
+  light-src="/images/guides/en/light/networks/firewall-entry.webp"
   alt="Firewall entry"
 />

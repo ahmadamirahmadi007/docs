@@ -181,6 +181,14 @@
   --vp-font-family-base: 'IranSans', sans-serif !important;
   font-family: var(--vp-font-family-base) !important;
 
+  /* ========= start 404 page ========= */
+  .NotFound .title {
+    letter-spacing: 0;
+  }
+
+  /* ========= end 404 page ========= */
+
+
   .back-button {
     transform: scaleX(-1);
   }

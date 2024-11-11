@@ -3,8 +3,8 @@
 After logging into your panel, you need to complete the authentication process.
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/user/auth.png"
-  light-src="/images/guides/en/light/user/auth.png"
+  dark-src="/images/guides/en/dark/user/auth.webp"
+  light-src="/images/guides/en/light/user/auth.webp"
   alt="Authentication"
 />
 

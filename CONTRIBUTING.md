@@ -87,10 +87,12 @@ To add images:
 
 > **:bulb: Note:** The site supports two languages (Persian and English) and two themes (dark and light). When adding images, make sure to provide appropriate versions for both languages and themes if necessary to ensure a consistent user experience.
 
+> **:warning: Note:** Please ensure that images are in WEBP format and optimized to the maximum extent before uploading. For best results, images should be sized between 700 and 1200 pixels. Optimized images will help improve loading times and enhance the overall performance of the website.
+
 
 2. **Use in Markdown**:
    ```markdown
-   ![Alt text](../../images/filename.png)
+   ![Alt text](../../images/filename.webp)
    ```
 
 ### :new_moon: Dark Mode Images
@@ -98,7 +100,7 @@ To add images:
 If you need different images for dark mode, use the `<DarkModeImage />` component:
 
 ```markdown
-<DarkModeImage src="image-light.png" dark-src="image-dark.png" alt="Alt text" />
+<DarkModeImage src="image-light.webp" dark-src="image-dark.webp" alt="Alt text" />
 ```
 
 ## Running the Development Server :rocket: {#run-on-dev}

@@ -3,8 +3,8 @@
 
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/user/auth.png"
-  light-src="/images/guides/fa/light/user/auth.png"
+  dark-src="/images/guides/fa/dark/user/auth.webp"
+  light-src="/images/guides/fa/light/user/auth.webp"
   alt="Authentication"
 />
 

@@ -3,8 +3,8 @@
 کاربران می توانند دامنه های خود را از طریق پنل کاربری و [منوی میزبانی دامنه](https://panel.virakcloud.com/dns/list) نگهداری و مدیریت نمایند.
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/dns/create-domain.png"
-  light-src="/images/guides/fa/light/dns/create-domain.png"
+  dark-src="/images/guides/fa/dark/dns/create-domain.webp"
+  light-src="/images/guides/fa/light/dns/create-domain.webp"
   alt="Domain Hosting"
 />
 
@@ -13,8 +13,8 @@
 دقت شود که دامنه را بدون www وارد کرده  و بعد از تایید در مرحله بعد میبایست از طریق پنل رجیستر دامنه یا سایتی که دامنه‌ی خود را تهیه کرده‌اید NSهای ویراک کلاد را ثبت و یا جایگزین NS های قبلی نمایید.
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/dns/add-domain.png"
-  light-src="/images/guides/fa/light/dns/add-domain.png"
+  dark-src="/images/guides/fa/dark/dns/add-domain.webp"
+  light-src="/images/guides/fa/light/dns/add-domain.webp"
   alt="Enter Domain"
 />
 
@@ -22,8 +22,8 @@
 ::: info نکته :
  NSهای ویراک کلود در کادر تنظیمات NS به شما نمایش داده می شود.
  <DarkModeImage
-  dark-src="/images/guides/fa/dark/dns/add-ns.png"
-  light-src="/images/guides/fa/light/dns/add-ns.png"
+  dark-src="/images/guides/fa/dark/dns/add-ns.webp"
+  light-src="/images/guides/fa/light/dns/add-ns.webp"
   alt="Add NS"
 />
 :::
@@ -35,16 +35,16 @@
 گزارشات در این بخش بر اساس تعداد درخواست ها , انواع رکورد ها ی مورد درخواست و همچنین لوکیشن درخواست ها بر اساس منطقه جغرافیایی قابل مشاهده می باشد.
 
  <DarkModeImage
-  dark-src="/images/guides/fa/dark/dns/log.png"
-  light-src="/images/guides/fa/light/dns/log.png"
+  dark-src="/images/guides/fa/dark/dns/log.webp"
+  light-src="/images/guides/fa/light/dns/log.webp"
   alt="DNS Logs"
 />
 
 ## رکوردها
 
  <DarkModeImage
-  dark-src="/images/guides/fa/dark/dns/records.png"
-  light-src="/images/guides/fa/light/dns/records.png"
+  dark-src="/images/guides/fa/dark/dns/records.webp"
+  light-src="/images/guides/fa/light/dns/records.webp"
   alt="DNS Records"
 />
 

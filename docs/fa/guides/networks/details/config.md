@@ -14,8 +14,8 @@
 به محض ایجاد شبکه خصوصی از نوع روتر مجازی و با اتصال اولین ابرک به آن، روتر مجازی به طور پیش فرض یک آی پی آدرس عمومی قابل رویت، دریافت خواهد کرد که از این آدرس به عنوان عمل Source NAT جهت برقراری ارتباط ابرک های متصل به این شبکه به خارج از شبکه استفاده خواهد شد.
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/networks/public-ip.png"
-  light-src="/images/guides/fa/light/networks/public-ip.png"
+  dark-src="/images/guides/fa/dark/networks/public-ip.webp"
+  light-src="/images/guides/fa/light/networks/public-ip.webp"
   alt="Public IPs"
 />
 

@@ -7,7 +7,7 @@
 :::
 
 <DarkModeImage
-  dark-src="/images/guides/fa/dark/tickets/register-req.png"
-  light-src="/images/guides/fa/light/tickets/register-req.png"
+  dark-src="/images/guides/fa/dark/tickets/register-req.webp"
+  light-src="/images/guides/fa/light/tickets/register-req.webp"
   alt="Ticket create"
 />

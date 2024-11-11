@@ -6,8 +6,8 @@ Through the [Create Network](https://panel.virakcloud.com/instances/network/list
 This type of network is used solely to establish a Layer 2 communication platform for cloud instances. By setting IP addresses in a subnet on instances connected to this network, the user can establish internal communication between them.
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/networks/create-network-switch.png"
-  light-src="/images/guides/en/light/networks/create-network-switch.png"
+  dark-src="/images/guides/en/dark/networks/create-network-switch.webp"
+  light-src="/images/guides/en/light/networks/create-network-switch.webp"
   alt="Create Virtual Switch"
 />
 
@@ -16,8 +16,8 @@ This type of network is used solely to establish a Layer 2 communication platfor
 As soon as this type of network is created, the system assigns a virtual router that is not visible to the user.
 
 <DarkModeImage
-  dark-src="/images/guides/en/dark/networks/create-network-router.png"
-  light-src="/images/guides/en/light/networks/create-network-router.png"
+  dark-src="/images/guides/en/dark/networks/create-network-router.webp"
+  light-src="/images/guides/en/light/networks/create-network-router.webp"
   alt="Create Virtual Router"
 />
 
