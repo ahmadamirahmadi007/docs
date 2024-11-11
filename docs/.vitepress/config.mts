@@ -11,7 +11,7 @@ dotenv.config({
 });
 
 
-const github_link_url = 'https://github.com/virakCloud/docs/edit/main/docs/:path'
+const github_link_url = 'https://github.com/virak-cloud/docs/edit/main/docs/:path'
 
 export default defineConfig({
   // shared properties and other top-level stuff...
