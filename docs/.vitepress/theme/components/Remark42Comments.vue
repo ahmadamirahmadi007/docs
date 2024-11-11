@@ -41,7 +41,7 @@ function loadRemarkScript() {
 onMounted(async () => {
   await nextTick(); // Ensures the layout is fully rendered
   window.remark_config = {
-    host: "https://docs.dev.virakcloud.net/", // Update to your host
+    host: "https://docs.dev.virakcloud.net/comment", // Update to your host
     site_id: "remark",
     theme: isDark.value ? "dark" : "light",
     no_footer: true,
