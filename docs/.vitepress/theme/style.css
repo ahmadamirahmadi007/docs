@@ -213,6 +213,9 @@
 
 /*rtl:ignore*/
 :where([dir="ltr"]) {
+  .VPHero.has-image .container {
+    text-align: left !important;
+  }
 
   .menu {
     right: 0;
