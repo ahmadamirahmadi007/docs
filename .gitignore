@@ -8,3 +8,4 @@ docs/.vitepress/dist
 
 *-lock.json
 *-lock.yaml
+.hintrc
