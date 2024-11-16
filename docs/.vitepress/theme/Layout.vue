@@ -12,7 +12,7 @@ const { isDark } = useData()
 
 // todo: check in production and if dont work for load comment after content remove this
 const contentLoaded = ref(false);
-const contentContainer = ref<HTMLElement|null>(null)
+// const contentContainer = ref<HTMLElement|null>(null)
 
 const route = useRoute()
 
@@ -33,7 +33,7 @@ onMounted(async () => {
   // todo: check in production and if dont work for load comment after content remove this two line
   await nextTick();
   contentLoaded.value = true;
-  contentContainer.value = document.querySelector('#VPContent .content-container')
+  // contentContainer.value = document.querySelector('#VPContent .content-container')
 });
 
 watch([() => isDark.value, () => route.path], () => {
