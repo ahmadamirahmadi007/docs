@@ -43,7 +43,7 @@ export default defineConfig({
     //   'meta',
     //   {
     //     'http-equiv': 'Content-Security-Policy',
-    //     content: "default-src 'self' http://comment.docs.dev.virakcloud.net;script-src 'self' unsafe-inline;img-src 'self' data: http://www.w3.org;font-src 'self' https://comment.docs.dev.virakcloud.net;frame-src 'self' http://comment.docs.dev.virakcloud.net"
+    //     content: "default-src 'self' http://comment.docs.dev.virakcloud.net;script-src 'self' 'unsafe-inline' 'sha256-jW8E86GWBGAVFGf/5vRbZnZXvKLkg/Xe8/launX0X3E=' 'sha256-jW8E86GWBGAVFGf/5vRbZnZXvKLkg/Xe8/launX0X3E=';img-src 'self' data: http://www.w3.org;font-src 'self' *.virakcloud.net;frame-src 'self' *.virakcloud.net"
     //     // content: "default-src 'self' http://comment.docs.dev.virakcloud.net; script-src 'self' 'unsafe-inline' https://docs.dev.virakcloud.net/comment; img-src 'self' data: http://www.w3.org; font-src 'self' https://comment.docs.dev.virakcloud.net; frame-src 'self' http://comment.docs.dev.virakcloud.net"
     //     // content: "default-src 'self' http://comment.docs.dev.virakcloud.net; script-src 'self' 'sha256-ioKwm4A0ku3wEYBnwj4Ku0q/YY0WRjxAhEzytaY1NlU=' 'sha256-Fsqyn9bmdm9YqJab/y7Pkf1onQ/FLBvinHuioq6TdJo='; img-src 'self' data: http://www.w3.org; font-src 'self' https://comment.docs.dev.virakcloud.net; frame-src 'self' http://comment.docs.dev.virakcloud.net"
     //     // content: "default-src 'self'; script-src 'self' 'unsafe-inline'; script-src-elem 'self' https://docs.dev.virakcloud.net; img-src 'self' data:; font-src 'self'; frame-src 'self'"
@@ -67,24 +67,24 @@ export default defineConfig({
       }
     }
   },
-  transformHead({ assets }) {
-    // adjust the regex accordingly to match your font
-    const myFontFile = assets.find(file => /IRANSansXV\.\w+\.woff2/)
-    if (myFontFile) {
-      return [
-        [
-          'link',
-          {
-            rel: 'preload',
-            href: myFontFile,
-            as: 'font',
-            type: 'font/woff2',
-            crossorigin: ''
-          }
-        ]
-      ]
-    }
-  },
+  // transformHead({ assets }) {
+  //   // adjust the regex accordingly to match your font
+  //   const myFontFile = assets.find(file => /IRANSansXV\.\w+\.woff2/)
+  //   if (myFontFile) {
+  //     return [
+  //       [
+  //         'link',
+  //         {
+  //           rel: 'preload',
+  //           href: myFontFile,
+  //           as: 'font',
+  //           type: 'font/woff2',
+  //           crossorigin: ''
+  //         }
+  //       ]
+  //     ]
+  //   }
+  // },
   markdown: {
     // https://github.com/markdown-it/markdown-it
     image: {
@@ -99,7 +99,7 @@ export default defineConfig({
       provider: 'local',
       options: {
         locales: {
-          root: { // make this `root` if you want to translate the default locale
+          fa: { // make this `root` if you want to translate the default locale
             translations: {
               button: {
                 buttonText: 'جستجو',
