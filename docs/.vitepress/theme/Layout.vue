@@ -1,5 +1,6 @@
 <!-- .vitepress/theme/Layout.vue -->
 <script setup lang="ts">
+import {computed} from "vue"
 import NotFound from "./components/404.vue"
 import { useData, useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
@@ -15,13 +16,16 @@ const contentContainer = ref<HTMLElement|null>(null)
 
 const route = useRoute()
 
+const weAreInHome = computed(()=>{
+  return ['/fa/guides/' , '/en/guides/'].includes(route.path)
+})
+
 const applyZoom = () => {
   mediumZoom('[data-zoomable]', {
     background: 'rgba(0,0,0, 0.8)',
     margin: 20
   });
 };
-
 
 onMounted(async () => {
   applyZoom();
@@ -78,7 +82,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
        <not-found/>
     </template>
   </DefaultTheme.Layout>
-  <Teleport v-if="contentLoaded && contentContainer" to="#VPContent .content-container" defer>
+  <Teleport v-if="contentLoaded && !weAreInHome" to="#VPContent .content-container" defer>
     <CommentBox />
   </Teleport>
 </template>
