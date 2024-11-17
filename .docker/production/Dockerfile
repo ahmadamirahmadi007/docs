@@ -27,7 +27,7 @@ RUN addgroup -S npm \
 
 USER npm
 COPY --chown=npm package.json ./
-COPY --chown=npm .env.${BUILD_MODE} ./.env
+#COPY --chown=npm .env.${BUILD_MODE} ./.env
 
 RUN npm install
 COPY --chown=npm . .
