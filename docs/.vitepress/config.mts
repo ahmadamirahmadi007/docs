@@ -31,6 +31,7 @@ export default defineConfig({
         href: '/favicon.ico'
       }
     ],
+    ['meta', { name: 'robots', content: 'noindex, nofollow' }],
     // [
     //   'meta',
     //   { 'http-equiv': 'Content-Security-Policy', content: "default-src 'self';script-src 'self' ; font-src 'self' data: https://comment.docs.dev.virakcloud.net;" },

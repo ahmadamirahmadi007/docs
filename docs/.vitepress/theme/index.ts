@@ -2,7 +2,10 @@
 // import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import './style.css'
+
+import './styles/style.css'
+import './styles/custom.css'
+
 import DarkModeImage from './components/DarkModeImages.vue'
 import Remark42Comments from './components/Remark42Comments.vue'
 
