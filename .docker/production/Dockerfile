@@ -14,7 +14,7 @@ FROM node:20.11.0-alpine3.18 AS npm_base
 ARG BASE_PKG
 ARG TEMP_PKG
 ARG BUILD_MODE
-ARG DOCS_ENV_FILE
+
 
 WORKDIR /app
 
@@ -30,7 +30,7 @@ RUN addgroup -S npm \
 USER npm
 COPY --chown=npm package.json ./
 
-RUN echo "${DOCS_ENV_FILE}" > .env.dev
+#RUN echo "${DOCS_ENV_FILE}" > .env.dev
 
 RUN npm install
 COPY --chown=npm . .
@@ -54,7 +54,7 @@ ARG TEMP_PKG
 WORKDIR /app
 
 RUN  apk add --no-cache ${TEMP_PKG}
-
+ENV VITE_SITEURL="https://docs.dev.virakcloud.net/"
 ENV TZ=Asia/Tehran
 RUN cp /usr/share/zoneinfo/$TZ /etc/localtime && \
         echo $TZ > /etc/timezone
