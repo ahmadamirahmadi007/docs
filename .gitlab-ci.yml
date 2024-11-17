@@ -15,7 +15,6 @@ build:
       - IMAGE_NAME: ['docs_web_server']
   variables:
     TAG_REGISTRY_IMAGE: $CI_REGISTRY_IMAGE/$IMAGE_NAME
-    VITE_SITEURL: $DOCS_ENV_FILE
 
   before_script:
     - echo $CI_REGISTRY_PASSWORD | docker login -u "$CI_REGISTRY_USER" --password-stdin $CI_REGISTRY
