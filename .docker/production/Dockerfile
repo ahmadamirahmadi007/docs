@@ -5,6 +5,7 @@ ARG BASE_PKG="libjpeg-turbo-dev libpng-dev libpq-dev libzip-dev tzdata npm sed"
 ARG TEMP_PKG="git bash bash-completion nano"
 
 
+
 ###################################################
 #                   composer_base                 #
 ###################################################
@@ -13,6 +14,7 @@ FROM node:20.11.0-alpine3.18 AS npm_base
 ARG BASE_PKG
 ARG TEMP_PKG
 ARG BUILD_MODE
+ARG DOCS_ENV_FILE
 
 WORKDIR /app
 
@@ -27,7 +29,8 @@ RUN addgroup -S npm \
 
 USER npm
 COPY --chown=npm package.json ./
-COPY --chown=npm .env.${BUILD_MODE} ./.env
+
+RUN echo "${DOCS_ENV_FILE}" > .env.dev
 
 RUN npm install
 COPY --chown=npm . .
