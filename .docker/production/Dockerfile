@@ -29,7 +29,7 @@ RUN addgroup -S npm \
 USER npm
 COPY --chown=npm package.json ./
 #COPY --chown=npm .env.${BUILD_MODE} ./.env
-RUN echo ${DOCS_ENV_FILE} >> /app/.env
+#RUN echo ${DOCS_ENV_FILE} >> /app/.env
 
 RUN npm install
 COPY --chown=npm . .
