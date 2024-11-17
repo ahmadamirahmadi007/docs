@@ -20,7 +20,6 @@ export default defineConfig({
   // title: "Virak Cloud",
   // description: "",
   sitemap: {
-    // todo : later check this
     hostname: process.env.VITE_SITEURL ?? ''
   },
   head: [
