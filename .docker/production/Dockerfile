@@ -30,7 +30,7 @@ RUN addgroup -S npm \
 USER npm
 COPY --chown=npm package.json ./
 
-RUN echo "${DOCS_ENV_FILE}" > .env.dev
+RUN echo "${DOCS_ENV_FILE}" > ./docs/.vitepress/.env.dev
 
 RUN npm install
 COPY --chown=npm . .
