@@ -21,7 +21,7 @@ build:
     - echo "$DOCS_ENV_FILE"
   cache: []
   script:
-    - export VITE_SITEURL="${DOCS_ENV_FILE}"
+    - export VITE_SITEURL=${DOCS_ENV_FILE}
     - echo "Custom VARR: ${DOCS_ENV_FILE}" 
     - version=$CI_COMMIT_REF_NAME$(date "+%Y%m%d")
     - docker build
