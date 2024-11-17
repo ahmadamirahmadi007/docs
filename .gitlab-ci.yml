@@ -15,13 +15,14 @@ build:
       - IMAGE_NAME: ['docs_web_server']
   variables:
     TAG_REGISTRY_IMAGE: $CI_REGISTRY_IMAGE/$IMAGE_NAME
+    VITE_SITEURL: $DOCS_ENV_FILE
+
   before_script:
     - echo $CI_REGISTRY_PASSWORD | docker login -u "$CI_REGISTRY_USER" --password-stdin $CI_REGISTRY
     - echo $CI_REGISTRY_IMAGE/$IMAGE_NAME
     - echo "$DOCS_ENV_FILE"
   cache: []
   script:
-    - echo "Custom VARR: ${DOCS_ENV_FILE}" 
     - version=$CI_COMMIT_REF_NAME$(date "+%Y%m%d")
     - docker build
       --compress
@@ -29,7 +30,7 @@ build:
       --file $PWD/.docker/production/Dockerfile
       --tag $TAG_REGISTRY_IMAGE:$version
       --target $IMAGE_NAME
-      --build-arg VITE_SITEURL=${DOCS_ENV_FILE} \
+      --build-arg VITE_SITEURL=${DOCS_ENV_FILE}
       --build-arg CI_JOB_TOKEN=${CI_JOB_TOKEN}
       .
     - docker push $TAG_REGISTRY_IMAGE:$version
