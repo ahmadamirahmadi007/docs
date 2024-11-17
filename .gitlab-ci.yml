@@ -30,7 +30,7 @@ build:
       --file $PWD/.docker/production/Dockerfile
       --tag $TAG_REGISTRY_IMAGE:$version
       --target $IMAGE_NAME
-      --build-arg VITE_SITEURL=${DOCS_ENV_FILE}
+      --build-arg DOCS_ENV_FILE=${DOCS_ENV_FILE}
       --build-arg CI_JOB_TOKEN=${CI_JOB_TOKEN}
       .
     - docker push $TAG_REGISTRY_IMAGE:$version
