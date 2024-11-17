@@ -30,7 +30,7 @@ RUN addgroup -S npm \
 USER npm
 COPY --chown=npm package.json ./
 
-RUN echo "VITE_SITEURL=${DOCS_ENV_FILE}" > .env
+RUN echo "${DOCS_ENV_FILE}" > .env
 
 RUN npm install
 COPY --chown=npm . .
