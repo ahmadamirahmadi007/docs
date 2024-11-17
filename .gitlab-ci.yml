@@ -21,12 +21,13 @@ build:
     - echo "$DOCS_ENV_FILE"
   cache: []
   script:
+    - export VITE_SITEURL="${DOCS_ENV_FILE}"
+    - echo "Custom VARR: ${DOCS_ENV_FILE}" 
     - version=$CI_COMMIT_REF_NAME$(date "+%Y%m%d")
     - docker build
       --compress
       --no-cache
       --file $PWD/.docker/production/Dockerfile
-      --build-arg DOCS_ENV_FILE=${DOCS_ENV_FILE}
       --tag $TAG_REGISTRY_IMAGE:$version
       --target $IMAGE_NAME
       --build-arg CI_JOB_TOKEN=${CI_JOB_TOKEN}
