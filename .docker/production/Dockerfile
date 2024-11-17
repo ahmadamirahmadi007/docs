@@ -5,6 +5,7 @@ ARG BASE_PKG="libjpeg-turbo-dev libpng-dev libpq-dev libzip-dev tzdata npm sed"
 ARG TEMP_PKG="git bash bash-completion nano"
 
 
+
 ###################################################
 #                   composer_base                 #
 ###################################################
@@ -28,6 +29,7 @@ RUN addgroup -S npm \
 USER npm
 COPY --chown=npm package.json ./
 #COPY --chown=npm .env.${BUILD_MODE} ./.env
+RUN echo ${DOCS_ENV_FILE} >> /app/.env
 
 RUN npm install
 COPY --chown=npm . .
