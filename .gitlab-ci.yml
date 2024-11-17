@@ -18,8 +18,7 @@ build:
   before_script:
     - echo $CI_REGISTRY_PASSWORD | docker login -u "$CI_REGISTRY_USER" --password-stdin $CI_REGISTRY
     - echo $CI_REGISTRY_IMAGE/$IMAGE_NAME
-    - echo $DOCS_ENV_FILE
-    - echo $DOCS_ENV_FILE >> /app/.env
+    - echo "$DOCS_ENV_FILE"
   cache: []
   script:
     - version=$CI_COMMIT_REF_NAME$(date "+%Y%m%d")
@@ -27,7 +26,7 @@ build:
       --compress
       --no-cache
       --file $PWD/.docker/production/Dockerfile
-      --build-arg BUILD_MODE="${CI_COMMIT_REF_NAME}"
+      --build-arg DOCS_ENV_FILE=${DOCS_ENV_FILE}
       --tag $TAG_REGISTRY_IMAGE:$version
       --target $IMAGE_NAME
       --build-arg CI_JOB_TOKEN=${CI_JOB_TOKEN}

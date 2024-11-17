@@ -14,6 +14,7 @@ FROM node:20.11.0-alpine3.18 AS npm_base
 ARG BASE_PKG
 ARG TEMP_PKG
 ARG BUILD_MODE
+ARG DOCS_ENV_FILE
 
 WORKDIR /app
 
@@ -29,7 +30,7 @@ RUN addgroup -S npm \
 USER npm
 COPY --chown=npm package.json ./
 #COPY --chown=npm .env.${BUILD_MODE} ./.env
-#RUN echo ${DOCS_ENV_FILE} >> /app/.env
+RUN echo ${DOCS_ENV_FILE} >> /app/.env
 
 RUN npm install
 COPY --chown=npm . .
