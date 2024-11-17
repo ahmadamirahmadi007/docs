@@ -34,7 +34,13 @@ COPY --chown=npm package.json ./
 RUN npm install
 COPY --chown=npm . .
 # RUN echo "${DOCS_ENV_FILE}" > ./docs/.vitepress/.env.dev
-RUN echo "${DOCS_ENV_FILE}" > .env.master
+RUN \
+  if [[ "$DOCS_ENV_FILE_DEV" == *dev* ]]; then \
+    echo "${DOCS_ENV_FILE_DEV}" > .env.dev
+  else
+    echo "${DOCS_ENV_FILE_MASTER}" > .env.master
+  fi
+
 
 RUN npm run docs:build:master
 #npm run docs:preview

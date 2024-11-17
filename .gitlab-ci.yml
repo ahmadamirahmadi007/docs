@@ -29,7 +29,8 @@ build:
       --file $PWD/.docker/production/Dockerfile
       --tag $TAG_REGISTRY_IMAGE:$version
       --target $IMAGE_NAME
-      --build-arg DOCS_ENV_FILE=${DOCS_ENV_FILE}
+      --build-arg DOCS_ENV_FILE_DEV=${DOCS_ENV_FILE_DEV} 
+      --build-arg DOCS_ENV_FILE_MASTER=${DOCS_ENV_FILE_MASTER} 
       --build-arg CI_JOB_TOKEN=${CI_JOB_TOKEN}
       .
     - docker push $TAG_REGISTRY_IMAGE:$version
