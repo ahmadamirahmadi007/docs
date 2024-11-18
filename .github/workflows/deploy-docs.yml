@@ -52,6 +52,8 @@ jobs:
         id: deployment
         with:
           path: docs/.vitepress/dist
+      - name: List output directory
+        run: ls -la .
 
   # Deployment job
   deploy:
