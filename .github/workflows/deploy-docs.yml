@@ -3,14 +3,15 @@ name: Deploy Documentation to GitHub Pages
 on:
   push:
     branches:
-      - dev  # Change this to your default branch if different
+      - dev  # Adjust to your branch name as needed
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
+      pages: write      # To deploy to GitHub Pages
+      id-token: write   # Required for Pages deployment
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -18,16 +19,24 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20'  # Specify the Node.js version you need
+          node-version: '20'  # Ensure the correct Node.js version is used
 
       - name: Install dependencies
         run: npm install
 
       - name: Build documentation
-        run: npm run docs:build:master
+        run: npm run docs:build:master  # Ensure this is the correct build command
+
+      - name: Verify build output
+        run: |
+          if [ ! -d "./docs/.vitepress/dist" ]; then
+            echo "Build directory not found!"
+            exit 1
+          fi
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs/.vitepress/dist
+      
