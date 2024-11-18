@@ -54,11 +54,6 @@ jobs:
         name: dist-files
 
     - name: Deploy to GitHub Pages
-
-
-      id: deploy
-
-
       uses: actions/deploy-pages@v1
       with:
         artifact: dist-files
