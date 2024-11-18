@@ -18,8 +18,6 @@ ARG DOCS_ENV_FILE
 
 WORKDIR /app
 
-##RUN  apk add --no-cache "node=v20.9.0" && \
-
 RUN apk add --no-cache ${BASE_PKG} && \
         apk add --no-cache ${TEMP_PKG}
 
@@ -33,17 +31,11 @@ COPY --chown=npm package.json ./
 
 RUN npm install
 COPY --chown=npm . .
-# RUN echo "${DOCS_ENV_FILE}" > ./docs/.vitepress/.env.dev
 RUN echo "${DOCS_ENV_FILE}" > .env.master
 
 RUN npm run docs:build:master
-#npm run docs:preview
-
 
 RUN echo ${BUILD_MODE:dev}
-#RUN npm build:${BUILD_MODE:-dev}
-#RUN NODE_OPTIONS="--max-old-space-size=4096" npm run generate:sentry
-# RUN npm cache clean --force
 ###################################################
 #                   web_server                    #
 ###################################################
