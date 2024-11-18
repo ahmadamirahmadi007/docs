@@ -1,42 +1,47 @@
-name: Deploy Documentation to GitHub Pages
+name: Build and Deploy Docs to GitHub Pages
 
 on:
   push:
     branches:
-      - dev  # Adjust to your branch name as needed
+      - master
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      pages: write      # To deploy to GitHub Pages
-      id-token: write   # Required for Pages deployment
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '20'  # Ensure the correct Node.js version is used
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
 
-      - name: Install dependencies
-        run: npm install
+    - name: Install dependencies
+      run: npm install
 
-      - name: Build documentation
-        run: npm run docs:build:master  # Ensure this is the correct build command
+    - name: Build docs
+      run: npm run docs:build:master
 
-      - name: Verify build output
-        run: |
-          if [ ! -d "./docs/.vitepress/dist" ]; then
-            echo "Build directory not found!"
-            exit 1
-          fi
+    - name: Upload production-ready files
+      uses: actions/upload-artifact@v3
+      with:
+        name: dist-files
+        path: ./docs/.vitepress/dist
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/.vitepress/dist
-      
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download production-ready files
+      uses: actions/download-artifact@v3
+      with:
+        name: dist-files
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/.vitepress/dist
+        publish_branch: gh-pages
