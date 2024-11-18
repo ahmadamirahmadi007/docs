@@ -39,6 +39,8 @@ jobs:
       with:
         name: dist-files
         path: ./docs/.vitepress/dist
+    - name: List output directory
+      run: ls -la ./docs/.vitepress/dist
 
   deploy:
     environment:
