@@ -40,9 +40,9 @@ jobs:
         path: ./docs/.vitepress/dist
 
   deploy:
-    permissions:
-      pages: write      # To deploy to GitHub Pages
-      id-token: write   # Required for Pages deployment
+    permissions: write-all
+      #pages: write      # To deploy to GitHub Pages
+      #id-token: write   # Required for Pages deployment
     needs: build
     runs-on: ubuntu-latest
     env:
@@ -56,6 +56,4 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: actions/deploy-pages@v1
       with:
-        artifact: dist-files
-
-
+        artifact_name: dist-files
