@@ -60,7 +60,7 @@ onMounted(async () => {
   await nextTick(); // Ensure layout is rendered before initializing
 
   window.remark_config = {
-    host: "https://docs.dev.virakcloud.net/comment",
+    host: import.meta.env.VITE_COMMENT_URL,
     site_id: "remark",
     theme: isDark.value ? "dark" : "light",
     no_footer: true,
