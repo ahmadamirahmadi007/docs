@@ -6,6 +6,8 @@ on:
       - master
       - dev
 
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -45,8 +47,6 @@ jobs:
       #id-token: write   # Required for Pages deployment
     needs: build
     runs-on: ubuntu-latest
-    env:
-      GITHUB_PAGE_URL: ${{ steps.deploy.outputs.page_url }}
     steps:
     - name: Download production-ready files
       uses: actions/download-artifact@v3
@@ -55,5 +55,7 @@ jobs:
 
     - name: Deploy to GitHub Pages
       uses: actions/deploy-pages@v1
+      env:  
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         artifact_name: dist-files
