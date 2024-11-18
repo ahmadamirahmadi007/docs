@@ -39,7 +39,11 @@ jobs:
         name: dist-files
         path: ./docs/.vitepress/dist
 
+
   deploy:
+    permissions:
+      pages: write      # To deploy to GitHub Pages
+      id-token: write   # Required for Pages deployment
     needs: build
     runs-on: ubuntu-latest
     steps:
