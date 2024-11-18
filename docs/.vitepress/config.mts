@@ -22,6 +22,7 @@ export default defineConfig({
   cleanUrls: true,
   // title: "Virak Cloud",
   // description: "",
+  base:/docs/,
   sitemap: {
     hostname: process.env.VITE_SITEURL ?? ''
   },
