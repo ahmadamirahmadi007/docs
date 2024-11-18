@@ -39,7 +39,6 @@ jobs:
         name: dist-files
         path: ./docs/.vitepress/dist
 
-
   deploy:
     permissions:
       pages: write      # To deploy to GitHub Pages
@@ -53,8 +52,6 @@ jobs:
         name: dist-files
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
+      uses: actions/deploy-pages@v1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs/.vitepress/dist
-        publish_branch: gh-pages
+        artifact: dist-files
