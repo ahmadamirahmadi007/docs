@@ -6,17 +6,17 @@
     <title>Language Redirect</title>
     <script>
         function getCookie(name) {
+          console.log('getCookie function run!!');
             const value = `; ${document.cookie}`;
             const parts = value.split(`; ${name}=`);
             if (parts.length === 2) return parts.pop().split(';').shift();
         }
 
         function setCookie(name, value, days) {
+            console.log('setCookie function run!!');
             const date = new Date();
             date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
             document.cookie = `${name}=${value};path=/;expires=${date.toUTCString()};SameSite=Lax`;
-
-            console.log(document.cookie)
         }
 
         async function detectAndRedirect() {
@@ -33,7 +33,7 @@
                 const response = await fetch('https://ipapi.co/json/');
                 const data = await response.json();
                 const country = data.country; // e.g., "IR" for Iran
-                
+
                 // Determine language based on location or browser language
                 let lang = 'en'; // Default language
                 if (country === "IR") {
@@ -44,14 +44,20 @@
                 }
 
                 // Save the language in a cookie
-                await setCookie('userLang', lang, 365); // Save for 1 year
-                
+                setCookie('userLang', lang, 365); // Save for 1 year
+
                 // Redirect to the appropriate language
                 window.location.href = `/docs/${lang}/guides/`;
             } catch (error) {
                 console.error("Error detecting location or language:", error);
                 // Default to English if there's an error
-                window.location.href = `/docs/en/guides/`;
+                if(Intl.DateTimeFormat().resolvedOptions().timeZone === 'Asia/Tehran'){
+                  await setCookie('userLang', 'fa', 365); // Save for 1 year
+                  window.location.href = `/docs/fa/guides/`;
+                }else{
+                  await setCookie('userLang', 'en', 365); // Save for 1 year
+                  window.location.href = `/docs/en/guides/`;
+                }
             }
         }
 
