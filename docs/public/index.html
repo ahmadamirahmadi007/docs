@@ -53,10 +53,10 @@
                 // Default to English if there's an error
                 if(Intl.DateTimeFormat().resolvedOptions().timeZone === 'Asia/Tehran'){
                   await setCookie('userLang', 'fa', 365); // Save for 1 year
-                  window.location.href = `/docs/fa/guides/`;
+                  window.location.href = `/fa/guides/`;
                 }else{
                   await setCookie('userLang', 'en', 365); // Save for 1 year
-                  window.location.href = `/docs/en/guides/`;
+                  window.location.href = `/en/guides/`;
                 }
             }
         }
